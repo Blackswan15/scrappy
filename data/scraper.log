@@ -1,0 +1,609 @@
+Traceback (most recent call last):
+  File "/home/abishek/Desktop/rnd/rd_monitor/backend/scraper.py", line 15, in <module>
+    import schedule
+ModuleNotFoundError: No module named 'schedule'
+2026-10-09 09:57:13,038  INFO     R&D Proposal Monitor starting — scan every 5 min
+2026-10-09 09:57:13,039  INFO     ============================================================
+2026-10-09 09:57:13,039  INFO     Scan started at 09 Oct 2026, 09:57 AM
+2026-10-09 09:57:13,039  INFO     Scraping ICMR …
+2026-10-09 09:57:14,973  INFO     ICMR: 12 proposals parsed
+2026-10-09 09:57:14,974  INFO     Scraping DBT (header-check mode) …
+2026-10-09 09:57:14,976  WARNING  DBT: no seed file found — using built-in defaults
+2026-10-09 09:57:17,031  INFO     DBT: 6 proposals checked
+2026-10-09 09:57:17,031  INFO     18 change(s) detected
+2026-10-09 09:57:17,032  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 18
+2026-10-09 09:57:17,032  INFO     Scheduler active. Next scan in 5 minutes.
+2026-10-09 09:59:53,194  INFO     Scraping ICMR …
+2026-10-09 09:59:54,440  INFO     ICMR: 12 proposals parsed
+2026-10-09 10:01:11,130  INFO     Scraping ICMR …
+2026-10-09 10:01:12,185  INFO     ICMR: 12 proposals parsed
+2026-10-09 10:11:49,071  INFO     Running single scan (--once)
+2026-10-09 10:11:49,071  INFO     ============================================================
+2026-10-09 10:11:49,071  INFO     Scan started at 09 Oct 2026, 10:11 AM
+2026-10-09 10:11:49,071  INFO     Scraping ICMR …
+2026-10-09 10:11:53,256  INFO     ICMR: 12 proposals parsed
+2026-10-09 10:11:53,257  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 10:12:20,831  INFO     DBT: 6 proposals checked
+2026-10-09 10:12:20,832  INFO     No changes detected
+2026-10-09 10:12:20,832  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 10:13:44,138  INFO     R&D Proposal Monitor starting — scan every 5 min
+2026-10-09 10:13:44,138  INFO     R&D Proposal Monitor starting — scan every 5 min
+2026-10-09 10:13:44,138  INFO     ============================================================
+2026-10-09 10:13:44,138  INFO     ============================================================
+2026-10-09 10:13:44,138  INFO     Scan started at 09 Oct 2026, 10:13 AM
+2026-10-09 10:13:44,138  INFO     Scan started at 09 Oct 2026, 10:13 AM
+2026-10-09 10:13:44,138  INFO     Scraping ICMR …
+2026-10-09 10:13:44,138  INFO     Scraping ICMR …
+2026-10-09 10:13:45,828  INFO     ICMR: 12 proposals parsed
+2026-10-09 10:13:45,828  INFO     ICMR: 12 proposals parsed
+2026-10-09 10:13:45,828  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 10:13:45,828  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 10:16:28,852  INFO     R&D Proposal Monitor starting — scan every 5 min
+2026-10-09 10:16:28,852  INFO     R&D Proposal Monitor starting — scan every 5 min
+2026-10-09 10:16:28,852  INFO     ============================================================
+2026-10-09 10:16:28,852  INFO     ============================================================
+2026-10-09 10:16:28,852  INFO     Scan started at 09 Oct 2026, 10:16 AM
+2026-10-09 10:16:28,852  INFO     Scan started at 09 Oct 2026, 10:16 AM
+2026-10-09 10:16:28,852  INFO     Scraping ICMR …
+2026-10-09 10:16:28,852  INFO     Scraping ICMR …
+2026-10-09 10:16:29,913  INFO     ICMR: 12 proposals parsed
+2026-10-09 10:16:29,913  INFO     ICMR: 12 proposals parsed
+2026-10-09 10:16:29,914  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 10:16:29,914  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 10:18:02,630  INFO     Running single scan (--once)
+2026-10-09 10:18:02,630  INFO     ============================================================
+2026-10-09 10:18:02,630  INFO     Scan started at 09 Oct 2026, 10:18 AM
+2026-10-09 10:18:02,630  INFO     Scraping ICMR …
+2026-10-09 10:18:03,895  INFO     ICMR: 12 proposals parsed
+2026-10-09 10:18:03,896  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 10:18:06,681  INFO     DBT: 6 proposals checked
+2026-10-09 10:18:06,681  INFO     No changes detected
+2026-10-09 10:18:06,682  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 10:19:27,635  INFO     R&D Proposal Monitor starting — scan every 5 min
+2026-10-09 10:19:27,635  INFO     R&D Proposal Monitor starting — scan every 5 min
+2026-10-09 10:19:27,635  INFO     ============================================================
+2026-10-09 10:19:27,635  INFO     ============================================================
+2026-10-09 10:19:27,635  INFO     Scan started at 09 Oct 2026, 10:19 AM
+2026-10-09 10:19:27,635  INFO     Scan started at 09 Oct 2026, 10:19 AM
+2026-10-09 10:19:27,635  INFO     Scraping ICMR …
+2026-10-09 10:19:27,635  INFO     Scraping ICMR …
+2026-10-09 10:19:29,373  INFO     ICMR: 12 proposals parsed
+2026-10-09 10:19:29,373  INFO     ICMR: 12 proposals parsed
+2026-10-09 10:19:29,373  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 10:19:29,373  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 10:19:32,457  INFO     DBT: 6 proposals checked
+2026-10-09 10:19:32,457  INFO     DBT: 6 proposals checked
+2026-10-09 10:19:32,458  INFO     No changes detected
+2026-10-09 10:19:32,458  INFO     No changes detected
+2026-10-09 10:19:32,458  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 10:19:32,458  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 10:19:32,458  INFO     Scheduler active. Next scan in 5 minutes.
+2026-10-09 10:19:32,458  INFO     Scheduler active. Next scan in 5 minutes.
+2026-10-09 10:20:24,150  INFO     Running single scan (--once)
+2026-10-09 10:20:24,150  INFO     ============================================================
+2026-10-09 10:20:24,150  INFO     Scan started at 09 Oct 2026, 10:20 AM
+2026-10-09 10:20:24,150  INFO     Scraping ICMR …
+2026-10-09 10:20:26,887  INFO     ICMR: 12 proposals parsed
+2026-10-09 10:20:26,888  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 10:20:30,729  INFO     DBT: 6 proposals checked
+2026-10-09 10:20:30,750  INFO     No changes detected
+2026-10-09 10:20:30,751  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 10:21:27,394  INFO     R&D Proposal Monitor starting — scan every 5 min
+2026-10-09 10:21:27,394  INFO     R&D Proposal Monitor starting — scan every 5 min
+2026-10-09 10:21:27,394  INFO     ============================================================
+2026-10-09 10:21:27,394  INFO     ============================================================
+2026-10-09 10:21:27,394  INFO     Scan started at 09 Oct 2026, 10:21 AM
+2026-10-09 10:21:27,394  INFO     Scan started at 09 Oct 2026, 10:21 AM
+2026-10-09 10:21:27,394  INFO     Scraping ICMR …
+2026-10-09 10:21:27,394  INFO     Scraping ICMR …
+2026-10-09 10:21:32,034  INFO     ICMR: 12 proposals parsed
+2026-10-09 10:21:32,034  INFO     ICMR: 12 proposals parsed
+2026-10-09 10:21:32,034  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 10:21:32,034  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 10:21:39,767  INFO     DBT: 6 proposals checked
+2026-10-09 10:21:39,767  INFO     DBT: 6 proposals checked
+2026-10-09 10:21:39,768  INFO     No changes detected
+2026-10-09 10:21:39,768  INFO     No changes detected
+2026-10-09 10:21:39,768  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 10:21:39,768  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 10:21:39,768  INFO     Scheduler active. Next scan in 5 minutes.
+2026-10-09 10:21:39,768  INFO     Scheduler active. Next scan in 5 minutes.
+2026-10-09 10:23:08,783  INFO     R&D Proposal Monitor starting — scan every 5 min
+2026-10-09 10:23:08,783  INFO     R&D Proposal Monitor starting — scan every 5 min
+2026-10-09 10:23:08,783  INFO     ============================================================
+2026-10-09 10:23:08,783  INFO     ============================================================
+2026-10-09 10:23:08,783  INFO     Scan started at 09 Oct 2026, 10:23 AM
+2026-10-09 10:23:08,783  INFO     Scan started at 09 Oct 2026, 10:23 AM
+2026-10-09 10:23:08,783  INFO     Scraping ICMR …
+2026-10-09 10:23:08,783  INFO     Scraping ICMR …
+2026-10-09 10:23:13,030  INFO     ICMR: 12 proposals parsed
+2026-10-09 10:23:13,030  INFO     ICMR: 12 proposals parsed
+2026-10-09 10:23:13,031  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 10:23:13,031  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 10:23:27,681  INFO     DBT: 6 proposals checked
+2026-10-09 10:23:27,681  INFO     DBT: 6 proposals checked
+2026-10-09 10:23:27,681  INFO     No changes detected
+2026-10-09 10:23:27,681  INFO     No changes detected
+2026-10-09 10:23:27,682  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 10:23:27,682  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 10:23:27,682  INFO     Scheduler active. Next scan in 5 minutes.
+2026-10-09 10:23:27,682  INFO     Scheduler active. Next scan in 5 minutes.
+2026-10-09 10:25:26,579  INFO     Running single scan (--once)
+2026-10-09 10:25:26,579  INFO     ============================================================
+2026-10-09 10:25:26,579  INFO     Scan started at 09 Oct 2026, 10:25 AM
+2026-10-09 10:25:26,579  INFO     Scraping ICMR …
+2026-10-09 10:25:28,108  INFO     ICMR: 12 proposals parsed
+2026-10-09 10:25:28,108  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 10:25:31,006  INFO     DBT: 6 proposals checked
+2026-10-09 10:25:31,007  INFO     No changes detected
+2026-10-09 10:25:31,007  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 10:31:04,503  INFO     R&D Proposal Monitor starting — scan every 5 min
+2026-10-09 10:31:04,503  INFO     R&D Proposal Monitor starting — scan every 5 min
+2026-10-09 10:31:04,503  INFO     ============================================================
+2026-10-09 10:31:04,503  INFO     ============================================================
+2026-10-09 10:31:04,503  INFO     Scan started at 09 Oct 2026, 10:31 AM
+2026-10-09 10:31:04,503  INFO     Scan started at 09 Oct 2026, 10:31 AM
+2026-10-09 10:31:04,503  INFO     Scraping ICMR …
+2026-10-09 10:31:04,503  INFO     Scraping ICMR …
+2026-10-09 10:31:06,249  INFO     ICMR: 12 proposals parsed
+2026-10-09 10:31:06,249  INFO     ICMR: 12 proposals parsed
+2026-10-09 10:31:06,250  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 10:31:06,250  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 10:31:12,260  INFO     DBT: 6 proposals checked
+2026-10-09 10:31:12,260  INFO     DBT: 6 proposals checked
+2026-10-09 10:31:12,261  INFO     No changes detected
+2026-10-09 10:31:12,261  INFO     No changes detected
+2026-10-09 10:31:12,261  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 10:31:12,261  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 10:31:12,261  INFO     Scheduler active. Next scan in 5 minutes.
+2026-10-09 10:31:12,261  INFO     Scheduler active. Next scan in 5 minutes.
+2026-10-09 10:36:12,262  INFO     ============================================================
+2026-10-09 10:36:12,262  INFO     ============================================================
+2026-10-09 10:36:12,262  INFO     Scan started at 09 Oct 2026, 10:36 AM
+2026-10-09 10:36:12,262  INFO     Scan started at 09 Oct 2026, 10:36 AM
+2026-10-09 10:36:12,262  INFO     Scraping ICMR …
+2026-10-09 10:36:12,262  INFO     Scraping ICMR …
+2026-10-09 10:36:13,745  INFO     ICMR: 12 proposals parsed
+2026-10-09 10:36:13,745  INFO     ICMR: 12 proposals parsed
+2026-10-09 10:36:13,746  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 10:36:13,746  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 10:36:15,598  INFO     DBT: 6 proposals checked
+2026-10-09 10:36:15,598  INFO     DBT: 6 proposals checked
+2026-10-09 10:36:15,599  INFO     No changes detected
+2026-10-09 10:36:15,599  INFO     No changes detected
+2026-10-09 10:36:15,599  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 10:36:15,599  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 13:16:27,936  INFO     R&D Proposal Monitor starting — scan every 5 min
+2026-10-09 13:16:27,936  INFO     R&D Proposal Monitor starting — scan every 5 min
+2026-10-09 13:16:27,936  INFO     ============================================================
+2026-10-09 13:16:27,936  INFO     ============================================================
+2026-10-09 13:16:27,936  INFO     Scan started at 09 Oct 2026, 01:16 PM
+2026-10-09 13:16:27,936  INFO     Scan started at 09 Oct 2026, 01:16 PM
+2026-10-09 13:16:27,936  INFO     Scraping ICMR …
+2026-10-09 13:16:27,936  INFO     Scraping ICMR …
+2026-10-09 13:16:29,357  INFO     ICMR: 12 proposals parsed
+2026-10-09 13:16:29,357  INFO     ICMR: 12 proposals parsed
+2026-10-09 13:16:29,357  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 13:16:29,357  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 13:16:32,826  INFO     DBT: 6 proposals checked
+2026-10-09 13:16:32,826  INFO     DBT: 6 proposals checked
+2026-10-09 13:16:32,832  INFO     No changes detected
+2026-10-09 13:16:32,832  INFO     No changes detected
+2026-10-09 13:16:32,832  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 13:16:32,832  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 13:16:32,832  INFO     Scheduler active. Next scan in 5 minutes.
+2026-10-09 13:16:32,832  INFO     Scheduler active. Next scan in 5 minutes.
+2026-10-09 13:21:32,833  INFO     ============================================================
+2026-10-09 13:21:32,833  INFO     ============================================================
+2026-10-09 13:21:32,833  INFO     Scan started at 09 Oct 2026, 01:21 PM
+2026-10-09 13:21:32,833  INFO     Scan started at 09 Oct 2026, 01:21 PM
+2026-10-09 13:21:32,833  INFO     Scraping ICMR …
+2026-10-09 13:21:32,833  INFO     Scraping ICMR …
+2026-10-09 13:21:34,474  INFO     ICMR: 12 proposals parsed
+2026-10-09 13:21:34,474  INFO     ICMR: 12 proposals parsed
+2026-10-09 13:21:34,475  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 13:21:34,475  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 13:21:37,953  INFO     DBT: 6 proposals checked
+2026-10-09 13:21:37,953  INFO     DBT: 6 proposals checked
+2026-10-09 13:21:37,955  INFO     No changes detected
+2026-10-09 13:21:37,955  INFO     No changes detected
+2026-10-09 13:21:37,956  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 13:21:37,956  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 13:26:37,957  INFO     ============================================================
+2026-10-09 13:26:37,957  INFO     ============================================================
+2026-10-09 13:26:37,957  INFO     Scan started at 09 Oct 2026, 01:26 PM
+2026-10-09 13:26:37,957  INFO     Scan started at 09 Oct 2026, 01:26 PM
+2026-10-09 13:26:37,957  INFO     Scraping ICMR …
+2026-10-09 13:26:37,957  INFO     Scraping ICMR …
+2026-10-09 13:26:39,660  INFO     ICMR: 12 proposals parsed
+2026-10-09 13:26:39,660  INFO     ICMR: 12 proposals parsed
+2026-10-09 13:26:39,661  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 13:26:39,661  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 13:26:42,825  INFO     DBT: 6 proposals checked
+2026-10-09 13:26:42,825  INFO     DBT: 6 proposals checked
+2026-10-09 13:26:42,826  INFO     No changes detected
+2026-10-09 13:26:42,826  INFO     No changes detected
+2026-10-09 13:26:42,826  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 13:26:42,826  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 13:31:42,828  INFO     ============================================================
+2026-10-09 13:31:42,828  INFO     ============================================================
+2026-10-09 13:31:42,828  INFO     Scan started at 09 Oct 2026, 01:31 PM
+2026-10-09 13:31:42,828  INFO     Scan started at 09 Oct 2026, 01:31 PM
+2026-10-09 13:31:42,828  INFO     Scraping ICMR …
+2026-10-09 13:31:42,828  INFO     Scraping ICMR …
+2026-10-09 13:31:44,538  INFO     ICMR: 12 proposals parsed
+2026-10-09 13:31:44,538  INFO     ICMR: 12 proposals parsed
+2026-10-09 13:31:44,539  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 13:31:44,539  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 13:31:47,918  INFO     DBT: 6 proposals checked
+2026-10-09 13:31:47,918  INFO     DBT: 6 proposals checked
+2026-10-09 13:31:47,919  INFO     No changes detected
+2026-10-09 13:31:47,919  INFO     No changes detected
+2026-10-09 13:31:47,919  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 13:31:47,919  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 13:36:47,921  INFO     ============================================================
+2026-10-09 13:36:47,921  INFO     ============================================================
+2026-10-09 13:36:47,921  INFO     Scan started at 09 Oct 2026, 01:36 PM
+2026-10-09 13:36:47,921  INFO     Scan started at 09 Oct 2026, 01:36 PM
+2026-10-09 13:36:47,921  INFO     Scraping ICMR …
+2026-10-09 13:36:47,921  INFO     Scraping ICMR …
+2026-10-09 13:36:49,537  INFO     ICMR: 12 proposals parsed
+2026-10-09 13:36:49,537  INFO     ICMR: 12 proposals parsed
+2026-10-09 13:36:49,537  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 13:36:49,537  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 13:36:53,544  INFO     DBT: 6 proposals checked
+2026-10-09 13:36:53,544  INFO     DBT: 6 proposals checked
+2026-10-09 13:36:53,545  INFO     No changes detected
+2026-10-09 13:36:53,545  INFO     No changes detected
+2026-10-09 13:36:53,545  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 13:36:53,545  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 13:41:53,546  INFO     ============================================================
+2026-10-09 13:41:53,546  INFO     ============================================================
+2026-10-09 13:41:53,546  INFO     Scan started at 09 Oct 2026, 01:41 PM
+2026-10-09 13:41:53,546  INFO     Scan started at 09 Oct 2026, 01:41 PM
+2026-10-09 13:41:53,546  INFO     Scraping ICMR …
+2026-10-09 13:41:53,546  INFO     Scraping ICMR …
+2026-10-09 13:41:55,033  INFO     ICMR: 12 proposals parsed
+2026-10-09 13:41:55,033  INFO     ICMR: 12 proposals parsed
+2026-10-09 13:41:55,034  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 13:41:55,034  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 13:41:59,868  INFO     DBT: 6 proposals checked
+2026-10-09 13:41:59,868  INFO     DBT: 6 proposals checked
+2026-10-09 13:41:59,869  INFO     No changes detected
+2026-10-09 13:41:59,869  INFO     No changes detected
+2026-10-09 13:41:59,869  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 13:41:59,869  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 13:45:00,499  INFO     Running single scan (--once)
+2026-10-09 13:45:00,499  INFO     ============================================================
+2026-10-09 13:45:00,499  INFO     Scan started at 09 Oct 2026, 01:45 PM
+2026-10-09 13:45:00,499  INFO     Scraping ICMR …
+2026-10-09 13:45:02,563  INFO     ICMR: 12 proposals parsed
+2026-10-09 13:45:02,563  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 13:45:06,232  INFO     DBT: 6 proposals checked
+2026-10-09 13:45:06,233  INFO     No changes detected
+2026-10-09 13:45:06,233  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 13:46:59,871  INFO     ============================================================
+2026-10-09 13:46:59,871  INFO     ============================================================
+2026-10-09 13:46:59,871  INFO     Scan started at 09 Oct 2026, 01:46 PM
+2026-10-09 13:46:59,871  INFO     Scan started at 09 Oct 2026, 01:46 PM
+2026-10-09 13:46:59,871  INFO     Scraping ICMR …
+2026-10-09 13:46:59,871  INFO     Scraping ICMR …
+2026-10-09 13:47:01,431  INFO     ICMR: 12 proposals parsed
+2026-10-09 13:47:01,431  INFO     ICMR: 12 proposals parsed
+2026-10-09 13:47:01,431  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 13:47:01,431  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 13:47:04,698  INFO     DBT: 6 proposals checked
+2026-10-09 13:47:04,698  INFO     DBT: 6 proposals checked
+2026-10-09 13:47:04,719  INFO     No changes detected
+2026-10-09 13:47:04,719  INFO     No changes detected
+2026-10-09 13:47:04,719  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 13:47:04,719  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 13:52:04,721  INFO     ============================================================
+2026-10-09 13:52:04,721  INFO     ============================================================
+2026-10-09 13:52:04,721  INFO     Scan started at 09 Oct 2026, 01:52 PM
+2026-10-09 13:52:04,721  INFO     Scan started at 09 Oct 2026, 01:52 PM
+2026-10-09 13:52:04,721  INFO     Scraping ICMR …
+2026-10-09 13:52:04,721  INFO     Scraping ICMR …
+2026-10-09 13:52:06,149  INFO     ICMR: 12 proposals parsed
+2026-10-09 13:52:06,149  INFO     ICMR: 12 proposals parsed
+2026-10-09 13:52:06,150  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 13:52:06,150  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 13:52:10,854  INFO     DBT: 6 proposals checked
+2026-10-09 13:52:10,854  INFO     DBT: 6 proposals checked
+2026-10-09 13:52:10,875  INFO     No changes detected
+2026-10-09 13:52:10,875  INFO     No changes detected
+2026-10-09 13:52:10,875  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 13:52:10,875  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 13:57:10,877  INFO     ============================================================
+2026-10-09 13:57:10,877  INFO     ============================================================
+2026-10-09 13:57:10,877  INFO     Scan started at 09 Oct 2026, 01:57 PM
+2026-10-09 13:57:10,877  INFO     Scan started at 09 Oct 2026, 01:57 PM
+2026-10-09 13:57:10,877  INFO     Scraping ICMR …
+2026-10-09 13:57:10,877  INFO     Scraping ICMR …
+2026-10-09 13:57:13,720  INFO     ICMR: 12 proposals parsed
+2026-10-09 13:57:13,720  INFO     ICMR: 12 proposals parsed
+2026-10-09 13:57:13,721  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 13:57:13,721  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 13:57:16,873  INFO     DBT: 6 proposals checked
+2026-10-09 13:57:16,873  INFO     DBT: 6 proposals checked
+2026-10-09 13:57:16,874  INFO     No changes detected
+2026-10-09 13:57:16,874  INFO     No changes detected
+2026-10-09 13:57:16,874  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 13:57:16,874  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 14:02:16,876  INFO     ============================================================
+2026-10-09 14:02:16,876  INFO     ============================================================
+2026-10-09 14:02:16,876  INFO     Scan started at 09 Oct 2026, 02:02 PM
+2026-10-09 14:02:16,876  INFO     Scan started at 09 Oct 2026, 02:02 PM
+2026-10-09 14:02:16,876  INFO     Scraping ICMR …
+2026-10-09 14:02:16,876  INFO     Scraping ICMR …
+2026-10-09 14:02:18,342  INFO     ICMR: 12 proposals parsed
+2026-10-09 14:02:18,342  INFO     ICMR: 12 proposals parsed
+2026-10-09 14:02:18,342  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 14:02:18,342  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 14:02:20,996  INFO     DBT: 6 proposals checked
+2026-10-09 14:02:20,996  INFO     DBT: 6 proposals checked
+2026-10-09 14:02:20,997  INFO     No changes detected
+2026-10-09 14:02:20,997  INFO     No changes detected
+2026-10-09 14:02:20,997  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 14:02:20,997  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 14:07:20,999  INFO     ============================================================
+2026-10-09 14:07:20,999  INFO     ============================================================
+2026-10-09 14:07:20,999  INFO     Scan started at 09 Oct 2026, 02:07 PM
+2026-10-09 14:07:20,999  INFO     Scan started at 09 Oct 2026, 02:07 PM
+2026-10-09 14:07:20,999  INFO     Scraping ICMR …
+2026-10-09 14:07:20,999  INFO     Scraping ICMR …
+2026-10-09 14:07:24,078  INFO     ICMR: 12 proposals parsed
+2026-10-09 14:07:24,078  INFO     ICMR: 12 proposals parsed
+2026-10-09 14:07:24,079  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 14:07:24,079  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 14:07:30,420  INFO     DBT: 6 proposals checked
+2026-10-09 14:07:30,420  INFO     DBT: 6 proposals checked
+2026-10-09 14:07:30,421  INFO     No changes detected
+2026-10-09 14:07:30,421  INFO     No changes detected
+2026-10-09 14:07:30,421  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 14:07:30,421  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 14:12:30,423  INFO     ============================================================
+2026-10-09 14:12:30,423  INFO     ============================================================
+2026-10-09 14:12:30,423  INFO     Scan started at 09 Oct 2026, 02:12 PM
+2026-10-09 14:12:30,423  INFO     Scan started at 09 Oct 2026, 02:12 PM
+2026-10-09 14:12:30,423  INFO     Scraping ICMR …
+2026-10-09 14:12:30,423  INFO     Scraping ICMR …
+2026-10-09 14:12:31,942  INFO     ICMR: 12 proposals parsed
+2026-10-09 14:12:31,942  INFO     ICMR: 12 proposals parsed
+2026-10-09 14:12:31,942  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 14:12:31,942  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 14:12:40,022  INFO     DBT: 6 proposals checked
+2026-10-09 14:12:40,022  INFO     DBT: 6 proposals checked
+2026-10-09 14:12:40,023  INFO     No changes detected
+2026-10-09 14:12:40,023  INFO     No changes detected
+2026-10-09 14:12:40,023  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 14:12:40,023  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 14:17:40,024  INFO     ============================================================
+2026-10-09 14:17:40,024  INFO     ============================================================
+2026-10-09 14:17:40,024  INFO     Scan started at 09 Oct 2026, 02:17 PM
+2026-10-09 14:17:40,024  INFO     Scan started at 09 Oct 2026, 02:17 PM
+2026-10-09 14:17:40,024  INFO     Scraping ICMR …
+2026-10-09 14:17:40,024  INFO     Scraping ICMR …
+2026-10-09 14:17:41,867  INFO     ICMR: 12 proposals parsed
+2026-10-09 14:17:41,867  INFO     ICMR: 12 proposals parsed
+2026-10-09 14:17:41,868  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 14:17:41,868  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-09 14:17:46,481  INFO     DBT: 6 proposals checked
+2026-10-09 14:17:46,481  INFO     DBT: 6 proposals checked
+2026-10-09 14:17:46,481  INFO     No changes detected
+2026-10-09 14:17:46,481  INFO     No changes detected
+2026-10-09 14:17:46,482  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-09 14:17:46,482  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-13 11:31:08,588  INFO     R&D Proposal Monitor starting — scan every 5 min
+2026-10-13 11:31:08,588  INFO     R&D Proposal Monitor starting — scan every 5 min
+2026-10-13 11:31:08,589  INFO     ============================================================
+2026-10-13 11:31:08,589  INFO     ============================================================
+2026-10-13 11:31:08,589  INFO     Scan started at 13 Oct 2026, 11:31 AM
+2026-10-13 11:31:08,589  INFO     Scan started at 13 Oct 2026, 11:31 AM
+2026-10-13 11:31:08,589  INFO     Scraping ICMR …
+2026-10-13 11:31:08,589  INFO     Scraping ICMR …
+2026-10-13 11:31:11,115  INFO     ICMR: 12 proposals parsed
+2026-10-13 11:31:11,115  INFO     ICMR: 12 proposals parsed
+2026-10-13 11:31:11,116  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-13 11:31:11,116  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-13 11:31:14,997  INFO     DBT: 6 proposals checked
+2026-10-13 11:31:14,997  INFO     DBT: 6 proposals checked
+2026-10-13 11:31:15,001  INFO     No changes detected
+2026-10-13 11:31:15,001  INFO     No changes detected
+2026-10-13 11:31:15,001  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-13 11:31:15,001  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-13 11:31:15,001  INFO     Scheduler active. Next scan in 5 minutes.
+2026-10-13 11:31:15,001  INFO     Scheduler active. Next scan in 5 minutes.
+2026-10-13 11:31:23,763  INFO     Running single scan (--once)
+2026-10-13 11:31:23,763  INFO     ============================================================
+2026-10-13 11:31:23,763  INFO     Scan started at 13 Oct 2026, 11:31 AM
+2026-10-13 11:31:23,763  INFO     Scraping ICMR …
+2026-10-13 11:31:25,464  INFO     ICMR: 12 proposals parsed
+2026-10-13 11:31:25,464  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-13 11:31:28,627  INFO     DBT: 6 proposals checked
+2026-10-13 11:31:28,628  INFO     No changes detected
+2026-10-13 11:31:28,629  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-13 11:36:15,003  INFO     ============================================================
+2026-10-13 11:36:15,003  INFO     ============================================================
+2026-10-13 11:36:15,003  INFO     Scan started at 13 Oct 2026, 11:36 AM
+2026-10-13 11:36:15,003  INFO     Scan started at 13 Oct 2026, 11:36 AM
+2026-10-13 11:36:15,003  INFO     Scraping ICMR …
+2026-10-13 11:36:15,003  INFO     Scraping ICMR …
+2026-10-13 11:36:16,762  INFO     ICMR: 12 proposals parsed
+2026-10-13 11:36:16,762  INFO     ICMR: 12 proposals parsed
+2026-10-13 11:36:16,762  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-13 11:36:16,762  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-13 11:36:20,749  INFO     DBT: 6 proposals checked
+2026-10-13 11:36:20,749  INFO     DBT: 6 proposals checked
+2026-10-13 11:36:20,750  INFO     No changes detected
+2026-10-13 11:36:20,750  INFO     No changes detected
+2026-10-13 11:36:20,750  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-13 11:36:20,750  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-13 11:41:20,753  INFO     ============================================================
+2026-10-13 11:41:20,753  INFO     ============================================================
+2026-10-13 11:41:20,753  INFO     Scan started at 13 Oct 2026, 11:41 AM
+2026-10-13 11:41:20,753  INFO     Scan started at 13 Oct 2026, 11:41 AM
+2026-10-13 11:41:20,753  INFO     Scraping ICMR …
+2026-10-13 11:41:20,753  INFO     Scraping ICMR …
+2026-10-13 11:41:22,240  INFO     ICMR: 12 proposals parsed
+2026-10-13 11:41:22,240  INFO     ICMR: 12 proposals parsed
+2026-10-13 11:41:22,241  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-13 11:41:22,241  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-13 11:41:25,101  INFO     DBT: 6 proposals checked
+2026-10-13 11:41:25,101  INFO     DBT: 6 proposals checked
+2026-10-13 11:41:25,102  INFO     No changes detected
+2026-10-13 11:41:25,102  INFO     No changes detected
+2026-10-13 11:41:25,102  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-13 11:41:25,102  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-13 11:46:25,106  INFO     ============================================================
+2026-10-13 11:46:25,106  INFO     ============================================================
+2026-10-13 11:46:25,106  INFO     Scan started at 13 Oct 2026, 11:46 AM
+2026-10-13 11:46:25,106  INFO     Scan started at 13 Oct 2026, 11:46 AM
+2026-10-13 11:46:25,106  INFO     Scraping ICMR …
+2026-10-13 11:46:25,106  INFO     Scraping ICMR …
+2026-10-13 11:46:26,690  INFO     ICMR: 12 proposals parsed
+2026-10-13 11:46:26,690  INFO     ICMR: 12 proposals parsed
+2026-10-13 11:46:26,691  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-13 11:46:26,691  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-13 11:46:30,675  INFO     DBT: 6 proposals checked
+2026-10-13 11:46:30,675  INFO     DBT: 6 proposals checked
+2026-10-13 11:46:30,676  INFO     No changes detected
+2026-10-13 11:46:30,676  INFO     No changes detected
+2026-10-13 11:46:30,676  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-13 11:46:30,676  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-13 11:51:30,680  INFO     ============================================================
+2026-10-13 11:51:30,680  INFO     ============================================================
+2026-10-13 11:51:30,680  INFO     Scan started at 13 Oct 2026, 11:51 AM
+2026-10-13 11:51:30,680  INFO     Scan started at 13 Oct 2026, 11:51 AM
+2026-10-13 11:51:30,680  INFO     Scraping ICMR …
+2026-10-13 11:51:30,680  INFO     Scraping ICMR …
+2026-10-13 11:51:32,164  INFO     ICMR: 12 proposals parsed
+2026-10-13 11:51:32,164  INFO     ICMR: 12 proposals parsed
+2026-10-13 11:51:32,164  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-13 11:51:32,164  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-13 11:51:35,639  INFO     DBT: 6 proposals checked
+2026-10-13 11:51:35,639  INFO     DBT: 6 proposals checked
+2026-10-13 11:51:35,640  INFO     No changes detected
+2026-10-13 11:51:35,640  INFO     No changes detected
+2026-10-13 11:51:35,640  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-13 11:51:35,640  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-14 11:26:44,726  INFO     R&D Proposal Monitor starting — scan every 5 min
+2026-10-14 11:26:44,726  INFO     R&D Proposal Monitor starting — scan every 5 min
+2026-10-14 11:26:44,726  INFO     ============================================================
+2026-10-14 11:26:44,726  INFO     ============================================================
+2026-10-14 11:26:44,726  INFO     Scan started at 14 Oct 2026, 11:26 AM
+2026-10-14 11:26:44,726  INFO     Scan started at 14 Oct 2026, 11:26 AM
+2026-10-14 11:26:44,726  INFO     Scraping ICMR …
+2026-10-14 11:26:44,726  INFO     Scraping ICMR …
+2026-10-14 11:26:46,168  INFO     ICMR: 12 proposals parsed
+2026-10-14 11:26:46,168  INFO     ICMR: 12 proposals parsed
+2026-10-14 11:26:46,168  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-14 11:26:46,168  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-14 11:26:48,460  INFO     DBT: 6 proposals checked
+2026-10-14 11:26:48,460  INFO     DBT: 6 proposals checked
+2026-10-14 11:26:48,464  INFO     No changes detected
+2026-10-14 11:26:48,464  INFO     No changes detected
+2026-10-14 11:26:48,465  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-14 11:26:48,465  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-14 11:26:48,465  INFO     Scheduler active. Next scan in 5 minutes.
+2026-10-14 11:26:48,465  INFO     Scheduler active. Next scan in 5 minutes.
+2026-10-14 11:31:48,466  INFO     ============================================================
+2026-10-14 11:31:48,466  INFO     ============================================================
+2026-10-14 11:31:48,468  INFO     Scan started at 14 Oct 2026, 11:31 AM
+2026-10-14 11:31:48,468  INFO     Scan started at 14 Oct 2026, 11:31 AM
+2026-10-14 11:31:48,468  INFO     Scraping ICMR …
+2026-10-14 11:31:48,468  INFO     Scraping ICMR …
+2026-10-14 11:31:49,473  INFO     ICMR: 12 proposals parsed
+2026-10-14 11:31:49,473  INFO     ICMR: 12 proposals parsed
+2026-10-14 11:31:49,474  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-14 11:31:49,474  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-14 11:31:50,859  INFO     DBT: 6 proposals checked
+2026-10-14 11:31:50,859  INFO     DBT: 6 proposals checked
+2026-10-14 11:31:50,864  INFO     No changes detected
+2026-10-14 11:31:50,864  INFO     No changes detected
+2026-10-14 11:31:50,864  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-14 11:31:50,864  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-14 11:36:50,865  INFO     ============================================================
+2026-10-14 11:36:50,865  INFO     ============================================================
+2026-10-14 11:36:50,887  INFO     Scan started at 14 Oct 2026, 11:36 AM
+2026-10-14 11:36:50,887  INFO     Scan started at 14 Oct 2026, 11:36 AM
+2026-10-14 11:36:50,887  INFO     Scraping ICMR …
+2026-10-14 11:36:50,887  INFO     Scraping ICMR …
+2026-10-14 11:36:52,174  INFO     ICMR: 12 proposals parsed
+2026-10-14 11:36:52,174  INFO     ICMR: 12 proposals parsed
+2026-10-14 11:36:52,175  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-14 11:36:52,175  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-14 11:36:55,609  INFO     DBT: 6 proposals checked
+2026-10-14 11:36:55,609  INFO     DBT: 6 proposals checked
+2026-10-14 11:36:55,613  INFO     No changes detected
+2026-10-14 11:36:55,613  INFO     No changes detected
+2026-10-14 11:36:55,613  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-14 11:36:55,613  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-14 11:41:55,614  INFO     ============================================================
+2026-10-14 11:41:55,614  INFO     ============================================================
+2026-10-14 11:41:55,616  INFO     Scan started at 14 Oct 2026, 11:41 AM
+2026-10-14 11:41:55,616  INFO     Scan started at 14 Oct 2026, 11:41 AM
+2026-10-14 11:41:55,616  INFO     Scraping ICMR …
+2026-10-14 11:41:55,616  INFO     Scraping ICMR …
+2026-10-14 11:41:57,107  INFO     ICMR: 12 proposals parsed
+2026-10-14 11:41:57,107  INFO     ICMR: 12 proposals parsed
+2026-10-14 11:41:57,108  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-14 11:41:57,108  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-14 11:41:58,139  INFO     DBT: 6 proposals checked
+2026-10-14 11:41:58,139  INFO     DBT: 6 proposals checked
+2026-10-14 11:41:58,142  INFO     No changes detected
+2026-10-14 11:41:58,142  INFO     No changes detected
+2026-10-14 11:41:58,142  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-14 11:41:58,142  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-14 11:46:58,143  INFO     ============================================================
+2026-10-14 11:46:58,143  INFO     ============================================================
+2026-10-14 11:46:58,143  INFO     Scan started at 14 Oct 2026, 11:46 AM
+2026-10-14 11:46:58,143  INFO     Scan started at 14 Oct 2026, 11:46 AM
+2026-10-14 11:46:58,143  INFO     Scraping ICMR …
+2026-10-14 11:46:58,143  INFO     Scraping ICMR …
+2026-10-14 11:46:59,247  INFO     ICMR: 12 proposals parsed
+2026-10-14 11:46:59,247  INFO     ICMR: 12 proposals parsed
+2026-10-14 11:46:59,248  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-14 11:46:59,248  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-14 11:47:00,507  INFO     DBT: 6 proposals checked
+2026-10-14 11:47:00,507  INFO     DBT: 6 proposals checked
+2026-10-14 11:47:00,508  INFO     No changes detected
+2026-10-14 11:47:00,508  INFO     No changes detected
+2026-10-14 11:47:00,508  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-14 11:47:00,508  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-14 11:52:00,510  INFO     ============================================================
+2026-10-14 11:52:00,510  INFO     ============================================================
+2026-10-14 11:52:00,513  INFO     Scan started at 14 Oct 2026, 11:52 AM
+2026-10-14 11:52:00,513  INFO     Scan started at 14 Oct 2026, 11:52 AM
+2026-10-14 11:52:00,513  INFO     Scraping ICMR …
+2026-10-14 11:52:00,513  INFO     Scraping ICMR …
+2026-10-14 11:52:01,725  INFO     ICMR: 12 proposals parsed
+2026-10-14 11:52:01,725  INFO     ICMR: 12 proposals parsed
+2026-10-14 11:52:01,726  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-14 11:52:01,726  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-14 11:52:03,381  INFO     DBT: 6 proposals checked
+2026-10-14 11:52:03,381  INFO     DBT: 6 proposals checked
+2026-10-14 11:52:03,385  INFO     No changes detected
+2026-10-14 11:52:03,385  INFO     No changes detected
+2026-10-14 11:52:03,386  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-14 11:52:03,386  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 0
+2026-10-18 18:42:37,708  INFO     R&D Proposal Monitor starting — scan every 5 min
+2026-10-18 18:42:37,708  INFO     R&D Proposal Monitor starting — scan every 5 min
+2026-10-18 18:42:37,708  INFO     ============================================================
+2026-10-18 18:42:37,708  INFO     ============================================================
+2026-10-18 18:42:37,708  INFO     Scan started at 18 Oct 2026, 06:42 PM
+2026-10-18 18:42:37,708  INFO     Scan started at 18 Oct 2026, 06:42 PM
+2026-10-18 18:42:37,709  INFO     Scraping ICMR …
+2026-10-18 18:42:37,709  INFO     Scraping ICMR …
+2026-10-18 18:42:38,924  INFO     ICMR: 12 proposals parsed
+2026-10-18 18:42:38,924  INFO     ICMR: 12 proposals parsed
+2026-10-18 18:42:38,925  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-18 18:42:38,925  INFO     Scraping DBT (header-check mode with SSL fallback) …
+2026-10-18 18:42:40,554  INFO     DBT: 6 proposals checked
+2026-10-18 18:42:40,554  INFO     DBT: 6 proposals checked
+2026-10-18 18:42:40,557  INFO     4 change(s) detected
+2026-10-18 18:42:40,557  INFO     4 change(s) detected
+2026-10-18 18:42:40,558  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 4
+2026-10-18 18:42:40,558  INFO     Scan complete. ICMR: 12 | DBT: 6 | Events: 4
+2026-10-18 18:42:40,558  INFO     Scheduler active. Next scan in 5 minutes.
+2026-10-18 18:42:40,558  INFO     Scheduler active. Next scan in 5 minutes.

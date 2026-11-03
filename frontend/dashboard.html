@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>R&D Proposal Monitor</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5F6FA;--white:#FFFFFF;--border:#E2E5ED;--border-light:#EEF0F5;--text:#111827;--text-sub:#6B7280;--text-dim:#9CA3AF;--accent:#1A56DB;--accent-bg:#EFF4FF;--accent-border:#C7D7FA;--green:#057A55;--green-bg:#ECFDF5;--green-border:#A7F3D0;--yellow:#92400E;--yellow-bg:#FFFBEB;--yellow-border:#FDE68A;--red:#9B1C1C;--red-bg:#FEF2F2;--red-border:#FECACA;--shadow-sm:0 1px 3px rgba(0,0,0,0.06),0 1px 2px rgba(0,0,0,0.04)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);font-size:14px;line-height:1.5}
+.shell{display:flex;height:100vh;overflow:hidden}
+.sidebar{width:236px;flex-shrink:0;background:var(--white);border-right:1px solid var(--border);display:flex;flex-direction:column}
+.logo-area{padding:20px 18px 18px;border-bottom:1px solid var(--border-light);display:flex;align-items:center;gap:10px}
+.logo-icon{width:32px;height:32px;border-radius:8px;background:var(--accent);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.logo-icon svg{width:16px;height:16px;color:#fff}
+.logo-text{font-size:13px;font-weight:700;line-height:1.2}
+.logo-text span{display:block;font-size:10px;font-weight:400;color:var(--text-sub);margin-top:1px}
+.nav{padding:14px 10px;flex:1;overflow-y:auto}
+.nav-section{margin-bottom:20px}
+.nav-lbl{font-size:10px;font-weight:600;color:var(--text-dim);text-transform:uppercase;letter-spacing:.07em;padding:0 8px;margin-bottom:4px}
+.nav-item{display:flex;align-items:center;gap:9px;padding:7px 8px;border-radius:7px;cursor:pointer;color:var(--text-sub);font-size:13px;font-weight:500;transition:background .1s,color .1s}
+.nav-item svg{width:15px;height:15px;flex-shrink:0}
+.nav-item:hover{background:var(--bg);color:var(--text)}
+.nav-item.active{background:var(--accent-bg);color:var(--accent)}
+.nav-badge{margin-left:auto;background:var(--red-bg);color:var(--red);border:1px solid var(--red-border);font-size:10px;font-weight:700;border-radius:20px;padding:1px 6px;min-width:20px;text-align:center}
+.sidebar-foot{padding:14px 18px;border-top:1px solid var(--border-light);font-size:11px;color:var(--text-sub)}
+.scan-row{display:flex;align-items:center;gap:7px;margin-bottom:6px}
+.live-dot{width:7px;height:7px;border-radius:50%;background:var(--green);flex-shrink:0;animation:blink 2.2s ease-in-out infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+.scan-bar{height:3px;background:var(--border);border-radius:3px;overflow:hidden}
+.scan-fill{height:100%;width:35%;background:linear-gradient(90deg,var(--accent),#60A5FA);border-radius:3px;animation:scanmove 3s ease-in-out infinite alternate}
+@keyframes scanmove{0%{margin-left:0}100%{margin-left:65%}}
+.countdown-txt{font-size:10px;color:var(--text-dim);margin-top:4px}
+.main{flex:1;display:flex;flex-direction:column;overflow:hidden}
+.topbar{background:var(--white);border-bottom:1px solid var(--border);padding:14px 24px;display:flex;align-items:center;gap:12px;flex-shrink:0}
+.topbar-title{font-size:15px;font-weight:700}
+.topbar-sub{font-size:12px;color:var(--text-sub);margin-left:6px}
+.topbar-right{margin-left:auto;display:flex;align-items:center;gap:8px}
+.btn{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:7px;font-size:12px;font-weight:600;cursor:pointer;border:1px solid var(--border);background:var(--white);color:var(--text);transition:all .15s;box-shadow:var(--shadow-sm)}
+.btn:hover{background:var(--bg)}.btn:disabled{opacity:.5;cursor:not-allowed}.btn svg{width:13px;height:13px}
+.btn-primary{background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:none}.btn-primary:hover{opacity:.9}
+.bell-wrap{position:relative;cursor:pointer;padding:7px;border-radius:7px;border:1px solid var(--border);background:var(--white);box-shadow:var(--shadow-sm)}
+.bell-wrap svg{width:16px;height:16px;color:var(--text-sub);display:block}
+.bell-badge{position:absolute;top:-3px;right:-3px;background:var(--red);color:#fff;font-size:9px;font-weight:700;border-radius:10px;padding:0 4px;min-width:16px;text-align:center;line-height:16px;height:16px}
+.page-tabs{background:var(--white);border-bottom:1px solid var(--border);padding:0 24px;display:flex;flex-shrink:0}
+.tab{padding:11px 16px;font-size:12px;font-weight:500;color:var(--text-sub);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;transition:color .15s,border-color .15s}
+.tab:hover{color:var(--text)}.tab.active{color:var(--accent);border-bottom-color:var(--accent);font-weight:600}
+.tab-badge{display:inline-block;margin-left:5px;background:var(--red);color:#fff;font-size:9px;font-weight:700;border-radius:20px;padding:1px 5px;vertical-align:middle}
+.scroll-area{flex:1;overflow-y:auto;padding:24px}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:24px}
+.stat-card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:16px 18px;box-shadow:var(--shadow-sm)}
+.stat-label{font-size:11px;font-weight:500;color:var(--text-sub);margin-bottom:8px}
+.stat-num{font-size:28px;font-weight:700;line-height:1}
+.stat-num.blue{color:var(--accent)}.stat-num.green{color:var(--green)}.stat-num.orange{color:#D97706}.stat-num.red{color:#DC2626}
+.stat-foot{font-size:11px;color:var(--text-dim);margin-top:6px}
+.sec-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.sec-title{font-size:13px;font-weight:700}.sec-meta{font-size:11px;color:var(--text-sub)}
+.site-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:26px}
+.site-card{background:var(--white);border:1px solid var(--border);border-radius:10px;overflow:hidden;box-shadow:var(--shadow-sm)}
+.site-head{padding:14px 16px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--border-light)}
+.site-pill{font-size:11px;font-weight:700;padding:5px 10px;border-radius:6px;flex-shrink:0}
+.site-pill.icmr{background:var(--accent-bg);color:var(--accent);border:1px solid var(--accent-border)}
+.site-pill.dbt{background:var(--green-bg);color:var(--green);border:1px solid var(--green-border)}
+.site-name-blk{flex:1;min-width:0}
+.site-name{font-size:13px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.site-url{font-size:10px;color:var(--text-sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:1px}
+.sdot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.sdot.live{background:#10B981;animation:blink 2s infinite}.sdot.changed{background:#F59E0B}
+.site-body{padding:12px 16px}
+.srow{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid var(--border-light);font-size:12px}
+.srow:last-of-type{border-bottom:none}.srow-k{color:var(--text-sub)}.srow-v{font-weight:600}
+.srow-v.green{color:var(--green)}
+.lout{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:600;color:var(--accent);text-decoration:none;margin-top:10px;padding:5px 10px;border:1px solid var(--accent-border);border-radius:6px;background:var(--accent-bg);transition:opacity .15s}
+.lout:hover{opacity:.8}.lout.dbt{color:var(--green);border-color:var(--green-border);background:var(--green-bg)}.lout svg{width:11px;height:11px}
+.table-card{background:var(--white);border:1px solid var(--border);border-radius:10px;overflow:hidden;box-shadow:var(--shadow-sm);margin-bottom:24px}
+.twrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse}
+thead tr{background:var(--bg)}
+th{padding:10px 14px;text-align:left;font-size:10px;font-weight:700;color:var(--text-sub);text-transform:uppercase;letter-spacing:.06em;border-bottom:1px solid var(--border);white-space:nowrap}
+td{padding:11px 14px;font-size:12px;border-bottom:1px solid var(--border-light);vertical-align:middle}
+tr:last-child td{border-bottom:none}tr:hover td{background:var(--bg)}
+.ptitle{font-weight:600;line-height:1.3}
+.badge{display:inline-flex;align-items:center;padding:3px 9px;border-radius:20px;font-size:10px;font-weight:700;border:1px solid}
+.badge.open{background:var(--green-bg);color:var(--green);border-color:var(--green-border)}
+.badge.result{background:var(--accent-bg);color:var(--accent);border-color:var(--accent-border)}
+.badge.closing{background:var(--yellow-bg);color:var(--yellow);border-color:var(--yellow-border)}
+.stag{display:inline-flex;padding:3px 8px;border-radius:5px;font-size:10px;font-weight:700;border:1px solid}
+.stag.icmr{background:var(--accent-bg);color:var(--accent);border-color:var(--accent-border)}
+.stag.dbt{background:var(--green-bg);color:var(--green);border-color:var(--green-border)}
+.ndot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent);margin-right:6px;vertical-align:middle}
+.nwrap{background:var(--white);border:1px solid var(--border);border-radius:10px;overflow:hidden;box-shadow:var(--shadow-sm)}
+.nhead{padding:14px 16px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px}
+.nhead-title{font-size:13px;font-weight:700}
+.npill{font-size:10px;font-weight:700;padding:2px 9px;border-radius:20px;background:var(--red-bg);color:var(--red);border:1px solid var(--red-border)}
+.nactions{margin-left:auto}
+.nitem{display:flex;gap:12px;padding:13px 16px;border-bottom:1px solid var(--border-light);cursor:pointer;transition:background .1s}
+.nitem:last-child{border-bottom:none}.nitem:hover{background:var(--bg)}.nitem.unread{background:#FAFBFF}
+.nico{width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;border:1px solid}
+.nico svg{width:15px;height:15px}
+.nico.new-prop{background:var(--green-bg);color:var(--green);border-color:var(--green-border)}
+.nico.updated{background:var(--yellow-bg);color:#B45309;border-color:var(--yellow-border)}
+.nico.removed{background:var(--red-bg);color:var(--red);border-color:var(--red-border)}
+.nbody{font-size:12px;line-height:1.5}
+.nmeta{display:flex;align-items:center;gap:8px;margin-top:4px}
+.ntime{font-size:10px;color:var(--text-dim)}
+.nsrc{font-size:10px;font-weight:600;padding:1px 7px;border-radius:4px}
+.nsrc.icmr{background:var(--accent-bg);color:var(--accent)}.nsrc.dbt{background:var(--green-bg);color:var(--green)}
+.udot{width:7px;height:7px;border-radius:50%;background:var(--accent);flex-shrink:0;margin-top:4px}
+.log-card{background:var(--white);border:1px solid var(--border);border-radius:10px;overflow:hidden;box-shadow:var(--shadow-sm)}
+.litem{display:flex;gap:14px;padding:13px 16px;border-bottom:1px solid var(--border-light)}
+.litem:last-child{border-bottom:none}
+.ltime{font-size:10px;color:var(--text-sub);white-space:nowrap;min-width:100px;padding-top:2px}
+.lmarker{display:flex;flex-direction:column;align-items:center;padding-top:5px}
+.ldot{width:8px;height:8px;border-radius:50%;border:2px solid;flex-shrink:0}
+.ldot.added{border-color:var(--green);background:var(--green-bg)}.ldot.updated{border-color:#D97706;background:var(--yellow-bg)}.ldot.removed{border-color:#DC2626;background:var(--red-bg)}
+.lline{width:1px;background:var(--border-light);flex:1;margin-top:4px;min-height:16px}
+.lcontent{flex:1}.ltitle{font-size:12px;font-weight:600}.ldetail{font-size:11px;color:var(--text-sub);margin-top:3px;line-height:1.5}
+.ltag{display:inline-block;font-size:9px;font-weight:700;padding:1px 6px;border-radius:4px;margin-left:8px;text-transform:uppercase;letter-spacing:.05em;vertical-align:middle;border:1px solid}
+.ltag.added{background:var(--green-bg);color:var(--green);border-color:var(--green-border)}
+.ltag.updated{background:var(--yellow-bg);color:var(--yellow);border-color:var(--yellow-border)}
+.ltag.removed{background:var(--red-bg);color:var(--red);border-color:var(--red-border)}
+.scard{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:22px;box-shadow:var(--shadow-sm);margin-bottom:16px}
+.stitle{font-size:13px;font-weight:700;margin-bottom:16px}
+.srow2{display:flex;align-items:center;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--border-light)}
+.srow2:last-child{border-bottom:none}
+.skey{font-size:12px;font-weight:500}.ssub{font-size:11px;color:var(--text-sub);margin-top:1px}
+input[type=checkbox]{width:16px;height:16px;accent-color:var(--accent);cursor:pointer}
+.fbtns{display:flex;gap:6px;flex-wrap:wrap}
+.fbtn{padding:5px 12px;border-radius:6px;font-size:11px;font-weight:600;cursor:pointer;border:1px solid var(--border);background:var(--white);color:var(--text-sub);transition:all .1s}
+.fbtn.active{background:var(--accent);border-color:var(--accent);color:#fff}
+.urow{display:flex;align-items:center;gap:12px;padding:10px 12px;border:1px solid var(--border);border-radius:8px;margin-bottom:8px;background:var(--bg)}
+.urow:last-child{margin-bottom:0}
+.utxt{font-size:11px;color:var(--text-sub);flex:1;font-family:monospace;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.loading{padding:40px;text-align:center;color:var(--text-sub);font-size:13px}
+.spinner{width:22px;height:22px;border:2px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .7s linear infinite;margin:0 auto 12px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.toast-container{position:fixed;bottom:24px;right:24px;z-index:200;display:flex;flex-direction:column;gap:10px}
+.toast{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:12px 16px;box-shadow:0 8px 24px rgba(0,0,0,.1);display:flex;align-items:flex-start;gap:12px;max-width:340px;animation:slideUp .3s ease}
+@keyframes slideUp{from{transform:translateY(16px);opacity:0}to{transform:translateY(0);opacity:1}}
+.ticon{width:28px;height:28px;border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0;border:1px solid}
+.ticon.new-prop{background:var(--green-bg);color:var(--green);border-color:var(--green-border)}
+.ticon.updated{background:var(--yellow-bg);color:#B45309;border-color:var(--yellow-border)}
+.ticon svg{width:13px;height:13px}
+.tbody2{flex:1}.ttitle{font-size:12px;font-weight:700}.tmsg{font-size:11px;color:var(--text-sub);margin-top:2px;line-height:1.4}
+.tclose{cursor:pointer;color:var(--text-dim);font-size:14px;padding:2px 4px;border-radius:4px;align-self:flex-start}
+.tclose:hover{color:var(--text);background:var(--bg)}
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.2);z-index:50;display:none}.overlay.open{display:block}
+.drawer{position:fixed;top:0;right:-380px;bottom:0;width:360px;background:var(--white);border-left:1px solid var(--border);box-shadow:-8px 0 24px rgba(0,0,0,.08);z-index:51;transition:right .25s ease;display:flex;flex-direction:column}
+.drawer.open{right:0}
+.dhead{padding:16px 18px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-shrink:0}
+.dtitle{font-size:14px;font-weight:700}
+.xbtn{cursor:pointer;padding:4px;color:var(--text-sub);border-radius:5px}.xbtn:hover{background:var(--bg);color:var(--text)}.xbtn svg{width:16px;height:16px;display:block}
+.dscroll{flex:1;overflow-y:auto}
+::-webkit-scrollbar{width:5px;height:5px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
+@media(max-width:900px){.sidebar{display:none}.stats-row{grid-template-columns:1fr 1fr}.site-cards{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="shell">
+<aside class="sidebar">
+  <div class="logo-area">
+    <div class="logo-icon"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M5 3a2 2 0 00-2 2v2.5H1.5A1.5 1.5 0 000 9v4.5A1.5 1.5 0 001.5 15h13A1.5 1.5 0 0016 13.5V9a1.5 1.5 0 00-1.5-1.5H13V5a2 2 0 00-2-2H5zm6 4V5a1 1 0 00-1-1H6a1 1 0 00-1 1v2h6z"/></svg></div>
+    <div class="logo-text">R&amp;D Proposal Monitor<span>Research &amp; Development Team</span></div>
+  </div>
+  <nav class="nav">
+    <div class="nav-section">
+      <div class="nav-lbl">Dashboard</div>
+      <div class="nav-item active" id="nav-dashboard" onclick="showView('dashboard')">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M1 2.5A1.5 1.5 0 012.5 1h3A1.5 1.5 0 017 2.5v3A1.5 1.5 0 015.5 7h-3A1.5 1.5 0 011 5.5v-3zm8 0A1.5 1.5 0 0110.5 1h3A1.5 1.5 0 0115 2.5v3A1.5 1.5 0 0113.5 7h-3A1.5 1.5 0 019 5.5v-3zm-8 8A1.5 1.5 0 012.5 9h3A1.5 1.5 0 017 10.5v3A1.5 1.5 0 015.5 15h-3A1.5 1.5 0 011 13.5v-3zm8 0A1.5 1.5 0 0110.5 9h3A1.5 1.5 0 0115 10.5v3A1.5 1.5 0 0113.5 15h-3A1.5 1.5 0 019 13.5v-3z"/></svg>Overview
+      </div>
+    </div>
+    <div class="nav-section">
+      <div class="nav-lbl">Monitored Sites</div>
+      <div class="nav-item" id="nav-icmr" onclick="showView('icmr')">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M0 8a8 8 0 1116 0A8 8 0 010 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 005.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 01.64-1.539 6.7 6.7 0 01.597-.933A7.025 7.025 0 002.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 00-.656 2.5h2.49z"/></svg>ICMR
+      </div>
+      <div class="nav-item" id="nav-dbt" onclick="showView('dbt')">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M0 8a8 8 0 1116 0A8 8 0 010 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 005.145 4H7.5V1.077z"/></svg>DBT
+      </div>
+    </div>
+    <div class="nav-section">
+      <div class="nav-lbl">Activity</div>
+      <div class="nav-item" id="nav-notifications" onclick="showView('notifications')">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 16a2 2 0 002-2H6a2 2 0 002 2zm.995-14.901a1 1 0 10-1.99 0A5.002 5.002 0 003 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/></svg>Notifications
+        <span class="nav-badge" id="navBadge" style="display:none">0</span>
+      </div>
+      <div class="nav-item" id="nav-changelog" onclick="showView('changelog')">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M2 1a1 1 0 000 2h12a1 1 0 000-2H2zm0 4a1 1 0 000 2h12a1 1 0 000-2H2zm0 4a1 1 0 000 2h12a1 1 0 000-2H2zm0 4a1 1 0 000 2h5a1 1 0 000-2H2z"/></svg>Change Log
+      </div>
+      <div class="nav-item" id="nav-settings" onclick="showView('settings')">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 4.754a3.246 3.246 0 100 6.492 3.246 3.246 0 000-6.492zM5.754 8a2.246 2.246 0 114.492 0 2.246 2.246 0 01-4.492 0z"/><path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 01-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 01-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 01.52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 011.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 011.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 01.52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 01-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 01-1.255-.52l-.094-.319z"/></svg>Settings
+      </div>
+    </div>
+  </nav>
+  <div class="sidebar-foot">
+    <div class="scan-row"><div class="live-dot"></div>Auto-scan every <strong id="freqLbl" style="margin-left:3px;">5 min</strong></div>
+    <div class="scan-bar"><div class="scan-fill"></div></div>
+    <div class="countdown-txt">Next scan in <span id="cdTxt">5:00</span></div>
+  </div>
+</aside>
+
+<div class="main">
+  <div class="topbar">
+    <div><span class="topbar-title" id="pgTitle">Overview</span><span class="topbar-sub" id="pgSub">— Monitoring 2 websites</span></div>
+    <div class="topbar-right">
+      <button class="btn" id="scanBtn" onclick="triggerScan()">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" d="M8 3a5 5 0 104.546 2.914.5.5 0 01.908-.417A6 6 0 118 2v1z"/><path d="M8 4.466V.534a.25.25 0 01.41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 018 4.466z"/></svg>Scan Now
+      </button>
+      <div class="bell-wrap" onclick="openDrawer()">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 16a2 2 0 002-2H6a2 2 0 002 2zm.995-14.901a1 1 0 10-1.99 0A5.002 5.002 0 003 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/></svg>
+        <span class="bell-badge" id="bellBadge" style="display:none">0</span>
+      </div>
+    </div>
+  </div>
+  <div class="page-tabs">
+    <div class="tab active" id="tab-dashboard" onclick="showView('dashboard')">Dashboard</div>
+    <div class="tab" id="tab-notifications" onclick="showView('notifications')">Notifications <span class="tab-badge" id="tabBadge" style="display:none">0</span></div>
+    <div class="tab" id="tab-changelog" onclick="showView('changelog')">Change Log</div>
+    <div class="tab" id="tab-settings" onclick="showView('settings')">Settings</div>
+  </div>
+
+  <div class="scroll-area">
+
+    <!-- DASHBOARD -->
+    <div id="view-dashboard">
+      <div class="stats-row">
+        <div class="stat-card"><div class="stat-label">Open Proposals</div><div class="stat-num blue" id="sOpen">—</div><div class="stat-foot" id="sOpenFoot">Loading…</div></div>
+        <div class="stat-card"><div class="stat-label">Sites Monitored</div><div class="stat-num green">2</div><div class="stat-foot">ICMR · DBT</div></div>
+        <div class="stat-card"><div class="stat-label">New This Scan</div><div class="stat-num orange" id="sNew">0</div><div class="stat-foot" id="sNewFoot">Checking…</div></div>
+        <div class="stat-card"><div class="stat-label">Unread Alerts</div><div class="stat-num red" id="sAlerts">0</div><div class="stat-foot">Tap bell to review</div></div>
+      </div>
+      <div class="sec-head">
+        <div class="sec-title">Monitored Websites</div>
+        <div class="sec-meta" id="lastScanTxt">Connecting…</div>
+      </div>
+      <div class="site-cards">
+        <div class="site-card">
+          <div class="site-head"><span class="site-pill icmr">ICMR</span><div class="site-name-blk"><div class="site-name">Indian Council of Medical Research</div><div class="site-url">icmr.gov.in/call-for-proposals</div></div><div class="sdot live"></div></div>
+          <div class="site-body">
+            <div class="srow"><span class="srow-k">Open Proposals</span><span class="srow-v" id="icmrOpen">—</span></div>
+            <div class="srow"><span class="srow-k">Results Published</span><span class="srow-v" id="icmrResult">—</span></div>
+            <div class="srow"><span class="srow-k">Page Last Updated</span><span class="srow-v green">8 Oct 2026</span></div>
+            <div class="srow"><span class="srow-k">Monitor Status</span><span class="srow-v green">Active ✓</span></div>
+            <a href="https://www.icmr.gov.in/call-for-proposals" target="_blank" class="lout"><svg viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 00-.5-.5H1.5A1.5 1.5 0 000 4.5v10A1.5 1.5 0 001.5 16h10a1.5 1.5 0 001.5-1.5V7.864a.5.5 0 00-1 0V14.5a.5.5 0 01-.5.5h-10a.5.5 0 01-.5-.5v-10a.5.5 0 01.5-.5h6.636a.5.5 0 00.5-.5z"/><path fill-rule="evenodd" d="M16 .5a.5.5 0 00-.5-.5h-5a.5.5 0 000 1h3.793L6.146 9.146a.5.5 0 10.708.708L15 1.707V5.5a.5.5 0 001 0v-5z"/></svg>Open ICMR Site</a>
+          </div>
+        </div>
+        <div class="site-card">
+          <div class="site-head"><span class="site-pill dbt">DBT</span><div class="site-name-blk"><div class="site-name">Department of Biotechnology</div><div class="site-url">dbt.gov.in/offerings/call-for-proposals</div></div><div class="sdot live"></div></div>
+          <div class="site-body">
+            <div class="srow"><span class="srow-k">Open Proposals</span><span class="srow-v" id="dbtOpen">—</span></div>
+            <div class="srow"><span class="srow-k">Proposals w/ Deadline</span><span class="srow-v" id="dbtDates">—</span></div>
+            <div class="srow"><span class="srow-k">Last Checked</span><span class="srow-v green" id="dbtTime">—</span></div>
+            <div class="srow"><span class="srow-k">Monitor Status</span><span class="srow-v green">Active ✓</span></div>
+            <a href="https://dbt.gov.in/offerings/call-for-proposals" target="_blank" class="lout dbt"><svg viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 00-.5-.5H1.5A1.5 1.5 0 000 4.5v10A1.5 1.5 0 001.5 16h10a1.5 1.5 0 001.5-1.5V7.864a.5.5 0 00-1 0V14.5a.5.5 0 01-.5.5h-10a.5.5 0 01-.5-.5v-10a.5.5 0 01.5-.5h6.636a.5.5 0 00.5-.5z"/><path fill-rule="evenodd" d="M16 .5a.5.5 0 00-.5-.5h-5a.5.5 0 000 1h3.793L6.146 9.146a.5.5 0 10.708.708L15 1.707V5.5a.5.5 0 001 0v-5z"/></svg>Open DBT Site</a>
+          </div>
+        </div>
+      </div>
+      <div class="sec-head"><div class="sec-title">Active Call for Proposals</div><div class="sec-meta" id="propMeta">Loading…</div></div>
+      <div class="table-card"><div class="twrap"><table>
+        <thead><tr><th>#</th><th>Proposal Title</th><th>Source</th><th>Status</th><th>Last Date</th><th>Document</th></tr></thead>
+        <tbody id="propBody"><tr><td colspan="6"><div class="loading"><div class="spinner"></div>Fetching live proposals…</div></td></tr></tbody>
+      </table></div></div>
+    </div>
+
+    <!-- ICMR -->
+    <div id="view-icmr" style="display:none">
+      <div class="sec-head"><div class="sec-title">ICMR — All Proposals</div><a href="https://www.icmr.gov.in/call-for-proposals" target="_blank" class="lout" style="font-size:11px;">Open Site ↗</a></div>
+      <div class="table-card"><div class="twrap"><table>
+        <thead><tr><th>#</th><th>Title</th><th>Status</th><th>Last Date</th><th>Document</th></tr></thead>
+        <tbody id="icmrBody"><tr><td colspan="5"><div class="loading"><div class="spinner"></div></div></td></tr></tbody>
+      </table></div></div>
+    </div>
+
+    <!-- DBT -->
+    <div id="view-dbt" style="display:none">
+      <div class="sec-head"><div class="sec-title">DBT — All Proposals</div><a href="https://dbt.gov.in/offerings/call-for-proposals" target="_blank" class="lout dbt" style="font-size:11px;">Open Site ↗</a></div>
+      <div class="table-card"><div class="twrap"><table>
+        <thead><tr><th>#</th><th>Title</th><th>Status</th><th>Last Date</th><th>Document</th></tr></thead>
+        <tbody id="dbtBody"><tr><td colspan="5"><div class="loading"><div class="spinner"></div></div></td></tr></tbody>
+      </table></div></div>
+    </div>
+
+    <!-- NOTIFICATIONS -->
+    <div id="view-notifications" style="display:none">
+      <div class="nwrap">
+        <div class="nhead"><div class="nhead-title">Proposal Change Alerts</div><span class="npill" id="notifPill">0 unread</span><div class="nactions"><button class="btn" onclick="markAllRead()">Mark all read</button></div></div>
+        <div id="notifFull"><div class="loading">Loading…</div></div>
+      </div>
+    </div>
+
+    <!-- CHANGELOG -->
+    <div id="view-changelog" style="display:none">
+      <div class="sec-head"><div class="sec-title">Change Log</div><div class="sec-meta">Proposal additions, updates &amp; removals</div></div>
+      <div class="log-card" id="logList"><div class="loading">Loading…</div></div>
+    </div>
+
+    <!-- SETTINGS -->
+    <div id="view-settings" style="display:none">
+      <div class="scard">
+        <div class="stitle">Monitored Websites</div>
+        <div class="urow"><span class="site-pill icmr" style="font-size:10px;padding:3px 8px;">ICMR</span><span class="utxt">https://www.icmr.gov.in/call-for-proposals</span><span class="badge open">Active</span></div>
+        <div class="urow"><span class="site-pill dbt" style="font-size:10px;padding:3px 8px;">DBT</span><span class="utxt">https://dbt.gov.in/offerings/call-for-proposals</span><span class="badge open">Active</span></div>
+      </div>
+      <div class="scard">
+        <div class="stitle">Dashboard Poll Frequency</div>
+        <div class="fbtns">
+          <div class="fbtn active" onclick="setFreq(5,this)">5 minutes</div>
+          <div class="fbtn" onclick="setFreq(10,this)">10 minutes</div>
+          <div class="fbtn" onclick="setFreq(30,this)">30 minutes</div>
+        </div>
+        <p style="font-size:11px;color:var(--text-sub);margin-top:10px;">This controls how often the dashboard checks the backend for new proposals. The backend scraper (<code style="background:var(--bg);padding:1px 4px;border-radius:3px;">scraper.py</code>) runs independently — set <code style="background:var(--bg);padding:1px 4px;border-radius:3px;">SCAN_INTERVAL_MINUTES</code> there to control server-side frequency.</p>
+      </div>
+      <div class="scard">
+        <div class="stitle">Notification Triggers</div>
+        <div class="srow2"><div><div class="skey">New proposal added to page</div><div class="ssub">Alert when a new entry appears on either site</div></div><input type="checkbox" checked></div>
+        <div class="srow2"><div><div class="skey">Proposal deadline or title updated</div><div class="ssub">Alert when an existing proposal is modified</div></div><input type="checkbox" checked></div>
+        <div class="srow2"><div><div class="skey">Proposal removed from page</div><div class="ssub">Alert when a listing disappears</div></div><input type="checkbox" checked></div>
+        <div class="srow2"><div><div class="skey">Result / outcome published</div><div class="ssub">Alert when a result row is added</div></div><input type="checkbox" checked></div>
+      </div>
+      <div class="scard">
+        <div class="stitle">Backend Connection</div>
+        <div class="srow2"><div><div class="skey">API Base URL</div><div class="ssub" id="apiUrlTxt">http://localhost:5050</div></div><span class="badge open" id="apiStat">Connected</span></div>
+        <div class="srow2"><div><div class="skey">Last successful fetch</div></div><span style="font-size:11px;color:var(--text-sub);" id="lastFetch">—</span></div>
+      </div>
+      <button class="btn btn-primary" onclick="fetchAll()">Refresh Data Now</button>
+    </div>
+
+  </div>
+</div>
+</div>
+
+<div class="overlay" id="overlay" onclick="closeDrawer()"></div>
+<div class="drawer" id="drawer">
+  <div class="dhead"><div class="dtitle">Notifications <span class="npill" id="drawerBadge">0 unread</span></div><div class="xbtn" onclick="closeDrawer()"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M4.646 4.646a.5.5 0 01.708 0L8 7.293l2.646-2.647a.5.5 0 01.708.708L8.707 8l2.647 2.646a.5.5 0 01-.708.708L8 8.707l-2.646 2.647a.5.5 0 01-.708-.708L7.293 8 4.646 5.354a.5.5 0 010-.708z"/></svg></div></div>
+  <div style="padding:10px 14px;border-bottom:1px solid var(--border-light);"><button class="btn" style="width:100%;justify-content:center;" onclick="markAllRead()">Mark all as read</button></div>
+  <div class="dscroll" id="drawerList"></div>
+</div>
+<div class="toast-container" id="toastC"></div>
+
+<script>
+const API='http://localhost:5050/api';
+let FREQ_MS=5*60*1000,cdSec=300;
+let prevIds=new Set();
+const VIEWS=['dashboard','icmr','dbt','notifications','changelog','settings'];
+
+function showView(v){
+  VIEWS.forEach(id=>{const e=document.getElementById('view-'+id);if(e)e.style.display=(id===v?'':'none')});
+  document.querySelectorAll('.nav-item').forEach(e=>e.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(e=>e.classList.remove('active'));
+  const n=document.getElementById('nav-'+v);if(n)n.classList.add('active');
+  const tmap={dashboard:'dashboard',icmr:'dashboard',dbt:'dashboard',notifications:'notifications',changelog:'changelog',settings:'settings'};
+  const t=document.getElementById('tab-'+(tmap[v]||v));if(t)t.classList.add('active');
+  const titles={dashboard:'Overview',icmr:'ICMR — Call for Proposals',dbt:'DBT — Call for Proposals',notifications:'Notifications',changelog:'Change Log',settings:'Settings'};
+  document.getElementById('pgTitle').textContent=titles[v]||v;
+}
+function sBadge(s){const m={open:'<span class="badge open">Open</span>',result:'<span class="badge result">Result</span>',closing:'<span class="badge closing">Closing</span>'};return m[s]||`<span class="badge">${s}</span>`}
+function dLink(u){if(!u)return'—';return`<a href="${u}" target="_blank" class="lout" style="font-size:10px;padding:3px 8px;display:inline-flex;gap:4px;"><svg viewBox="0 0 16 16" fill="currentColor" style="width:10px;height:10px;"><path d="M4 0a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V4.5L9.5 0H4zm5.5 1v3h3L9.5 1z"/></svg>PDF</a>`}
+function nIco(t){
+  const plus=`<svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 15A7 7 0 118 1a7 7 0 010 14zm0 1A8 8 0 108 0a8 8 0 000 16z"/><path d="M8 4a.5.5 0 01.5.5v3h3a.5.5 0 010 1h-3v3a.5.5 0 01-1 0v-3h-3a.5.5 0 010-1h3v-3A.5.5 0 018 4z"/></svg>`;
+  const pen=`<svg viewBox="0 0 16 16" fill="currentColor"><path d="M12.854.146a.5.5 0 00-.707 0l-1.647 1.647L14.207 5.5l1.647-1.646a.5.5 0 000-.708l-3-3zm-2 2l-8 8-.547 2.459 2.46-.547 8-8-1.913-1.912z"/></svg>`;
+  const xmark=`<svg viewBox="0 0 16 16" fill="currentColor"><path d="M4.646 4.646a.5.5 0 01.708 0L8 7.293l2.646-2.647a.5.5 0 01.708.708L8.707 8l2.647 2.646a.5.5 0 01-.708.708L8 8.707l-2.646 2.647a.5.5 0 01-.708-.708L7.293 8 4.646 5.354a.5.5 0 010-.708z"/></svg>`;
+  return t==='new-prop'?plus:t==='removed'?xmark:pen;
+}
+function renderTbl(id,rows,src){
+  const el=document.getElementById(id);
+  if(!rows||!rows.length){el.innerHTML='<tr><td colspan="6" style="text-align:center;color:var(--text-sub);padding:30px;">No proposals found</td></tr>';return}
+  el.innerHTML=rows.map((r,i)=>`<tr>
+    <td style="color:var(--text-dim);font-size:11px;">${r.sn||i+1}</td>
+    <td><div class="ptitle">${i<2?'<span class="ndot"></span>':''}${r.title}</div></td>
+    ${src?`<td><span class="stag ${r.source}">${r.source.toUpperCase()}</span></td>`:''}
+    <td>${sBadge(r.status)}</td>
+    <td style="white-space:nowrap;font-size:11px;font-family:monospace;">${r.lastDate||'—'}</td>
+    <td>${dLink(r.docUrl)}</td>
+  </tr>`).join('');
+}
+function renderNotifs(cid,notifs){
+  const el=document.getElementById(cid);
+  if(!notifs.length){el.innerHTML='<div style="padding:30px;text-align:center;color:var(--text-sub);font-size:12px;">No notifications yet</div>';return}
+  el.innerHTML=notifs.map(n=>`
+    <div class="nitem ${n.unread?'unread':''}" onclick="markRead(${n.id})">
+      <div class="nico ${n.type}">${nIco(n.type)}</div>
+      <div style="flex:1;"><div class="nbody">${n.body}</div>
+      <div class="nmeta"><span class="nsrc ${n.src}">${n.src.toUpperCase()}</span><span class="ntime">${n.time}</span></div></div>
+      ${n.unread?'<div class="udot"></div>':''}
+    </div>`).join('');
+}
+function renderLog(notifs){
+  const el=document.getElementById('logList');
+  const items=notifs.slice(0,30);
+  if(!items.length){el.innerHTML='<div style="padding:30px;text-align:center;color:var(--text-sub);">No changes recorded yet</div>';return}
+  const tm={'new-prop':'added','updated':'updated','removed':'removed'};
+  el.innerHTML=items.map((n,i)=>{const t=tm[n.type]||'updated';return`
+    <div class="litem">
+      <div class="ltime">${n.time}</div>
+      <div class="lmarker"><div class="ldot ${t}"></div>${i<items.length-1?'<div class="lline"></div>':''}</div>
+      <div class="lcontent"><div class="ltitle">${n.src.toUpperCase()} <span class="ltag ${t}">${t.toUpperCase()}</span></div>
+      <div class="ldetail">${n.body.replace(/<[^>]*>/g,'')}</div></div>
+    </div>`;}).join('');
+}
+function setBadges(u){
+  ['navBadge','bellBadge','tabBadge'].forEach(id=>{const e=document.getElementById(id);if(!e)return;e.textContent=u;e.style.display=u>0?'':'none'});
+  document.getElementById('notifPill').textContent=u+' unread';
+  document.getElementById('drawerBadge').textContent=u+' unread';
+  document.getElementById('sAlerts').textContent=u;
+}
+function toast(n){
+  const c=document.getElementById('toastC'),id='t'+Date.now(),d=document.createElement('div');
+  d.className='toast';d.id=id;
+  d.innerHTML=`<div class="ticon ${n.type}">${nIco(n.type)}</div>
+    <div class="tbody2"><div class="ttitle">${n.src.toUpperCase()} — ${n.type==='new-prop'?'New Proposal':n.type==='updated'?'Updated':'Removed'}</div>
+    <div class="tmsg">${n.body.replace(/<[^>]*>/g,'')}</div></div>
+    <span class="tclose" onclick="document.getElementById('${id}').remove()">×</span>`;
+  c.appendChild(d);
+  setTimeout(()=>{const e=document.getElementById(id);if(e)e.remove()},8000);
+}
+
+// ── Fallback data (shown when backend is offline) ─────────────────────────────
+function loadFallback(){
+  const icmr=[
+    {sn:1,title:"EoI: C-Mn3O4 NP Nanodrug Formulations for Neonatal Hyperbilirubinemia",lastDate:"Oct 21, 2026",status:"open",source:"icmr",docUrl:"https://www.icmr.gov.in/icmrobject/uploads/Call/1790767806_expressionofinteresteoiforidentifyingsuitablepharmaceuticalpartnersfordevelopmentandmanufactureofmultiplestrengthsofcmn3o4npnanodrugformulations_01102026.pdf"},
+    {sn:2,title:"First in World Challenge Grants (2026) — Investigator-Initiated Research",lastDate:"Nov 30, 2026",status:"open",source:"icmr",docUrl:"https://www.icmr.gov.in/icmrobject/uploads/Call/1790846907_call_fiw_2026.pdf"},
+    {sn:3,title:"Special Call: ICMR CAR for Priority Medical Devices & Diagnostic Technologies",lastDate:"Nov 15, 2026",status:"open",source:"icmr",docUrl:"https://www.icmr.gov.in/icmrobject/uploads/Call/1790769452_specialcallforproposalsforestablishmentoficmrcentreforadvancedresearchcarforthedevelopmentofprioritymedicaldevicesanddiagnostictechnologies01102026.pdf"},
+    {sn:4,title:"Special Call: CAR under NIRMAN-AT (Assistive Technology)",lastDate:"Nov 15, 2026",status:"open",source:"icmr",docUrl:"https://www.icmr.gov.in/icmrobject/uploads/Call/1790827202_carnirman-at202601102026.pdf"},
+    {sn:5,title:"EoI: Food & Diet-Based Approaches for NCD Prevention & Management",lastDate:"Oct 23, 2026",status:"open",source:"icmr",docUrl:"https://www.icmr.gov.in/icmrobject/uploads/Call/1790766447_eoifordietandncds-final.pdf"},
+    {sn:6,title:"ICMR Intramural Research Program 2026 (Extended to Oct 31)",lastDate:"Oct 31, 2026",status:"open",source:"icmr",docUrl:"https://www.icmr.gov.in/icmrobject/uploads/Call/1788257123_imcallforproposal202631_08_2026.pdf"},
+    {sn:7,title:"Research Proposals – Northeastern Region of India (HRD Sub-Scheme, MoHFW)",lastDate:"Nov 30, 2026",status:"open",source:"icmr",docUrl:"https://www.icmr.gov.in/icmrobject/uploads/Call/1790596857_calln_rdhr.pdf"},
+    {sn:8,title:"SARANSH-3: EoI for Systematic Review Workshops – Regional Capacity Building",lastDate:"Sep 30, 2026",status:"open",source:"icmr",docUrl:"https://www.icmr.gov.in/icmrobject/uploads/Call/1788175112_saransh_3_website.pdf"},
+    {sn:9,title:"Results: Special Call for ICMR CAR – Priority Medical Devices",lastDate:"",status:"result",source:"icmr",docUrl:"https://www.icmr.gov.in/icmrobject/uploads/Call/1789637746_specialcallforproposalsforestablishmentoficmrcentresforadvancedresearchcarfordevelopmentofprioritymedicaldevicesanddiagnostictechnologies17092026.pdf"},
+    {sn:10,title:"Result: NISCHAYAK ANVESHAN Extramural Grants 2026",lastDate:"",status:"result",source:"icmr",docUrl:"https://www.icmr.gov.in/icmrobject/uploads/Call/1789018245_listof157selectedregularproposals.pdf"},
+    {sn:11,title:"Result: Follow-on NISCHAYAK ANVESHAN Extramural Grants 2026",lastDate:"",status:"result",source:"icmr",docUrl:"https://www.icmr.gov.in/icmrobject/uploads/Call/1789018180_listof14selectedfollowonproposals.pdf"},
+    {sn:12,title:"Results: EoI – ICMR Clinical Care Excellence Initiative (NCD Multi-centre Trials)",lastDate:"",status:"result",source:"icmr",docUrl:"https://www.icmr.gov.in/icmrobject/uploads/Call/1789363466_results_eoiforicmrclinicalcareexcellenceinitiativemulti-centreclinicaltrials.pdf"},
+  ];
+  const dbt=[
+    {sn:1,title:"Microbiome & Human Health – Therapeutic Potential and Translational Opportunities",lastDate:"Oct 15, 2026",status:"open",source:"dbt",docUrl:"https://dbt.gov.in/storage/media/Gn8sCFXGM8OHPFXw1xcrAMozOL7IvYNMaxOyisoI.pdf"},
+    {sn:2,title:"T Cell Based Vaccines and Biologics (Infectious Diseases, Cancer, Autoimmune)",lastDate:"Oct 6, 2026",status:"open",source:"dbt",docUrl:"https://dbt.gov.in/storage/media/kD4sCpy1loK6v13u8bhOdCHaJDCxTn0B1yzs1qRY.pdf"},
+    {sn:3,title:"DBT-BIRAC Joint Call: Bio-AI for BioE3 Hubs (BioE3 Biomanufacturing Policy)",lastDate:"Jun 30, 2026",status:"open",source:"dbt",docUrl:"https://dbt.gov.in/storage/media/K0rMbuIV5klmNimgi3DLd5GPL6Qo5z6QW9imsYJl.pdf"},
+    {sn:4,title:"BioCARe Programme for Women Researchers 2026-27",lastDate:"Oct 8, 2026",status:"open",source:"dbt",docUrl:"https://dbt.gov.in/storage/media/Q8L31YFSQ675iHlardBO8bAH7Imv09ms54ftI3wV.pdf"},
+    {sn:5,title:"Biotechnological Interventions for High Value Cash Crops",lastDate:"May 5, 2026",status:"open",source:"dbt",docUrl:"https://dbt.gov.in/storage/media/wVU64NlxMyCCIAFQQrlL7hllrPkq6Edlyn9ITL9D.pdf"},
+    {sn:6,title:"Next-Generation Vaccines, Diagnostics & Therapeutics (Livestock & Aquaculture)",lastDate:"May 15, 2026",status:"open",source:"dbt",docUrl:"https://dbt.gov.in/storage/media/3evyiwTCG0lXpC85dyTMzFv6Kup10H6S1qwLtLvW.pdf"},
+  ];
+  const all=[];const mx=Math.max(icmr.length,dbt.length);
+  for(let i=0;i<mx;i++){if(icmr[i])all.push(icmr[i]);if(dbt[i])all.push(dbt[i]);}
+  renderTbl('propBody',all,true);renderTbl('icmrBody',icmr,false);renderTbl('dbtBody',dbt,false);
+  const io=icmr.filter(p=>p.status==='open').length,ir=icmr.filter(p=>p.status==='result').length,dO=dbt.filter(p=>p.status==='open').length;
+  document.getElementById('sOpen').textContent=io+dO;
+  document.getElementById('sOpenFoot').textContent=`ICMR: ${io} · DBT: ${dO}`;
+  document.getElementById('icmrOpen').textContent=io;document.getElementById('icmrResult').textContent=ir;
+  document.getElementById('dbtOpen').textContent=dO;document.getElementById('dbtDates').textContent=dbt.filter(p=>p.lastDate).length+' with dates';
+  document.getElementById('propMeta').textContent=`${io+dO} open — cached (backend offline)`;
+}
+
+// ── API ───────────────────────────────────────────────────────────────────────
+async function fetchProposals(){
+  try{
+    const r=await fetch(API+'/proposals');if(!r.ok)throw 0;
+    const d=await r.json();
+    const ic=d.icmr||[],db=d.dbt||[];
+    const io=ic.filter(p=>p.status==='open').length,ir=ic.filter(p=>p.status==='result').length,dO=db.filter(p=>p.status==='open').length;
+    document.getElementById('sOpen').textContent=io+dO;
+    document.getElementById('sOpenFoot').textContent=`ICMR: ${io} · DBT: ${dO}`;
+    document.getElementById('icmrOpen').textContent=io;document.getElementById('icmrResult').textContent=ir;
+    document.getElementById('dbtOpen').textContent=dO;document.getElementById('dbtDates').textContent=db.filter(p=>p.lastDate).length+' with dates';
+    document.getElementById('propMeta').textContent=`${io+dO} open · ${ir} results`;
+    if(d.lastScan){['lastScanTxt','dbtTime'].forEach(id=>document.getElementById(id).textContent=d.lastScan);document.getElementById('pgSub').textContent='— Last scan: '+d.lastScan;document.getElementById('lastFetch').textContent=d.lastScan;}
+    const all=[];const mx=Math.max(ic.length,db.length);for(let i=0;i<mx;i++){if(ic[i])all.push(ic[i]);if(db[i])all.push(db[i]);}
+    renderTbl('propBody',all,true);renderTbl('icmrBody',ic,false);renderTbl('dbtBody',db,false);
+    document.getElementById('apiStat').className='badge open';document.getElementById('apiStat').textContent='Connected';
+  }catch(e){document.getElementById('apiStat').className='badge closing';document.getElementById('apiStat').textContent='Offline';loadFallback();}
+}
+async function fetchNotifs(){
+  try{
+    const r=await fetch(API+'/notifications');if(!r.ok)throw 0;
+    const ns=await r.json();
+    const u=ns.filter(n=>n.unread).length;setBadges(u);
+    renderNotifs('notifFull',ns);renderNotifs('drawerList',ns);renderLog(ns);
+    document.getElementById('sNew').textContent=u;
+    ns.filter(n=>n.unread&&!prevIds.has(n.id)).forEach(n=>toast(n));
+    ns.forEach(n=>prevIds.add(n.id));
+  }catch(e){}
+}
+async function fetchAll(){await fetchProposals();await fetchNotifs();}
+async function markRead(id){try{await fetch(`${API}/notifications/read/${id}`,{method:'POST'})}catch(e){}await fetchNotifs();}
+async function markAllRead(){try{await fetch(`${API}/notifications/read-all`,{method:'POST'})}catch(e){}await fetchNotifs();}
+async function triggerScan(){
+  const b=document.getElementById('scanBtn');b.disabled=true;
+  b.innerHTML='<div class="spinner" style="width:13px;height:13px;margin:0;border-width:2px;"></div> Scanning…';
+  try{await fetch(`${API}/scan`,{method:'POST'})}catch(e){}
+  setTimeout(async()=>{await fetchAll();b.disabled=false;b.innerHTML='<svg viewBox="0 0 16 16" fill="currentColor" style="width:13px;height:13px;"><path fill-rule="evenodd" d="M8 3a5 5 0 104.546 2.914.5.5 0 01.908-.417A6 6 0 118 2v1z"/><path d="M8 4.466V.534a.25.25 0 01.41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 018 4.466z"/></svg>Scan Now';resetCD();},3500);
+}
+function openDrawer(){document.getElementById('drawer').classList.add('open');document.getElementById('overlay').classList.add('open');}
+function closeDrawer(){document.getElementById('drawer').classList.remove('open');document.getElementById('overlay').classList.remove('open');}
+function setFreq(m,btn){FREQ_MS=m*60*1000;document.getElementById('freqLbl').textContent=m+' min';document.querySelectorAll('.fbtn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');resetCD();}
+function resetCD(){cdSec=FREQ_MS/1000;}
+function tickCD(){
+  if(cdSec<=0){fetchAll();resetCD();return;}
+  const m=Math.floor(cdSec/60),s=cdSec%60;
+  document.getElementById('cdTxt').textContent=m+':'+String(s).padStart(2,'0');
+  cdSec--;
+}
+document.getElementById('apiUrlTxt').textContent='http://localhost:5050';
+fetchAll();resetCD();setInterval(tickCD,1000);
+</script>
+</body>
+</html>
