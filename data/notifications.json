@@ -1,200 +1,1002 @@
 [
   {
-    "id": 1792329160558,
-    "unread": false,
-    "type": "new-prop",
-    "src": "icmr",
-    "body": "<strong>New proposal added</strong> on ICMR — \"Special Call for Proposals for Establishment of ICMR Centre for Advanced Research (CAR) for the Development of Priority Medical Devices and Diagnostic Technologies (Last Date : 13th November, 2026, 1700 hours)\". Deadline: Nov. 13, 2026.",
-    "docUrl": "https://www.icmr.gov.in/icmrobject/uploads/Call/1791972453_mdms_special_call_v2.pdf",
-    "time": "18 Oct 2026, 06:42 PM"
-  },
-  {
-    "id": 1792329160558,
-    "unread": false,
-    "type": "new-prop",
-    "src": "icmr",
-    "body": "<strong>New proposal added</strong> on ICMR — \"Special Call for Establishment of ICMR Centres for Advanced Research (CAR) under the National Initiative for Reliable Medical Device Development and Assessment Network - Assistive Technology (NIRMAN – AT) (Last Date : 13th November 2026, 1700 hours)\". Deadline: Nov. 13, 2026.",
-    "docUrl": "https://www.icmr.gov.in/icmrobject/uploads/Call/1791972387_carassistivetechcall_v2.pdf",
-    "time": "18 Oct 2026, 06:42 PM"
-  },
-  {
-    "id": 1792329160558,
+    "id": 1793682318874,
     "unread": false,
     "type": "removed",
-    "src": "icmr",
-    "body": "<strong>Proposal removed</strong> from ICMR — \"Special Call for Proposals for Establishment of ICMR Centre for Advanced Research (CAR) for the Development of Priority Medical Devices and Diagnostic Technologies (Last Date : 15th November, 2026, 1700 hours)\" is no longer listed.",
+    "src": "aerb",
+    "srcName": "Atomic Energy Regulatory Board (AERB)",
+    "body": "<strong>Proposal removed</strong> from Atomic Energy Regulatory Board (AERB) — \"Policies Governing Regulation\" is no longer active.",
     "docUrl": "",
-    "time": "18 Oct 2026, 06:42 PM"
+    "time": "03 Nov 2026, 10:35 AM"
   },
   {
-    "id": 1792329160558,
+    "id": 1793682318874,
     "unread": false,
     "type": "removed",
-    "src": "icmr",
-    "body": "<strong>Proposal removed</strong> from ICMR — \"Special Call for Establishment of ICMR Centres for Advanced Research (CAR) under the National Initiative for Reliable Medical Device Development and Assessment Network - Assistive Technology (NIRMAN – AT) (Last Date : 15th November 2026, 1700 hours)\" is no longer listed.",
+    "src": "aerb",
+    "srcName": "Atomic Energy Regulatory Board (AERB)",
+    "body": "<strong>Proposal removed</strong> from Atomic Energy Regulatory Board (AERB) — \"Integrated Management System (IMS) of AERB\" is no longer active.",
     "docUrl": "",
-    "time": "18 Oct 2026, 06:42 PM"
+    "time": "03 Nov 2026, 10:35 AM"
   },
   {
-    "id": 1791520037032,
+    "id": 1793682318874,
     "unread": false,
-    "type": "new-prop",
-    "src": "icmr",
-    "body": "<strong>New proposal added</strong> on ICMR — \"Results: Special Call for proposals for establishment of ICMR Centres for Advanced Research (CAR) for Development of Priority Medical Devices and Diagnostic Technologies\"",
-    "docUrl": "https://www.icmr.gov.in/icmrobject/uploads/Call/1789637746_specialcallforproposalsforestablishmentoficmrcentresforadvancedresearchcarfordevelopmentofprioritymedicaldevicesanddiagnostictechnologies17092026.pdf",
-    "time": "09 Oct 2026, 09:57 AM"
+    "type": "removed",
+    "src": "aerb",
+    "srcName": "Atomic Energy Regulatory Board (AERB)",
+    "body": "<strong>Proposal removed</strong> from Atomic Energy Regulatory Board (AERB) — \"Code of Ethics\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:35 AM"
   },
   {
-    "id": 1791520037032,
+    "id": 1793682318874,
     "unread": false,
-    "type": "new-prop",
-    "src": "icmr",
-    "body": "<strong>New proposal added</strong> on ICMR — \"EoI for Development and Manufacture of Multiple Strengths of C-Mn3O4 NP Nanodrug Formulations and Matching Placebo for Clinical Trial Batches for Neonatal Hyperbilirubinemia and Associated Neurotoxicity or Bilirubin Encephalopathy (Last dt: Oct 21, '26)\". Deadline: Oct. 21, 2026.",
-    "docUrl": "https://www.icmr.gov.in/icmrobject/uploads/Call/1790767806_expressionofinteresteoiforidentifyingsuitablepharmaceuticalpartnersfordevelopmentandmanufactureofmultiplestrengthsofcmn3o4npnanodrugformulations_01102026.pdf",
-    "time": "09 Oct 2026, 09:57 AM"
+    "type": "removed",
+    "src": "aerb",
+    "srcName": "Atomic Energy Regulatory Board (AERB)",
+    "body": "<strong>Proposal removed</strong> from Atomic Energy Regulatory Board (AERB) — \"Help Desk for Radiation Facilities\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:35 AM"
   },
   {
-    "id": 1791520037032,
+    "id": 1793682318874,
     "unread": false,
-    "type": "new-prop",
-    "src": "icmr",
-    "body": "<strong>New proposal added</strong> on ICMR — \"Result: Call for Investigator-Initiated Research Proposals for “ICMR Intermediate Extramural Grants” (“ICMR NISCHAYAK ANVESHAN Extramural Grants”) - 2026 (Call Released on December 19, 2025)\"",
-    "docUrl": "https://www.icmr.gov.in/icmrobject/uploads/Call/1789018245_listof157selectedregularproposals.pdf",
-    "time": "09 Oct 2026, 09:57 AM"
+    "type": "removed",
+    "src": "aerb",
+    "srcName": "Atomic Energy Regulatory Board (AERB)",
+    "body": "<strong>Proposal removed</strong> from Atomic Energy Regulatory Board (AERB) — \"Contact List for Radiation Facilities\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:35 AM"
   },
   {
-    "id": 1791520037032,
+    "id": 1793682318874,
     "unread": false,
-    "type": "new-prop",
-    "src": "icmr",
-    "body": "<strong>New proposal added</strong> on ICMR — \"Result: Call for Investigator-Initiated Research Proposals for “ICMR Follow-on Intermediate Extramural Grants” (“ICMR Follow-on NISCHAYAK ANVESHAN Extramural Grants”) - 2026 (Call Released on December 19, 2025)\"",
-    "docUrl": "https://www.icmr.gov.in/icmrobject/uploads/Call/1789018180_listof14selectedfollowonproposals.pdf",
-    "time": "09 Oct 2026, 09:57 AM"
+    "type": "removed",
+    "src": "aerb",
+    "srcName": "Atomic Energy Regulatory Board (AERB)",
+    "body": "<strong>Proposal removed</strong> from Atomic Energy Regulatory Board (AERB) — \"Brochure on SAFETY RESEARCH PROGRAMMES FUNDED BY ATOMIC ENERGY REGULATORY BOARD (AERB)\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:35 AM"
   },
   {
-    "id": 1791520037032,
+    "id": 1793682318874,
     "unread": false,
-    "type": "new-prop",
-    "src": "icmr",
-    "body": "<strong>New proposal added</strong> on ICMR — \"Results - Expression of Interest (EoI) for the ICMR Clinical Care Excellence Initiative: Multi-centre Clinical Trials Addressing Non-Communicable Diseases\"",
-    "docUrl": "https://www.icmr.gov.in/icmrobject/uploads/Call/1789363466_results_eoiforicmrclinicalcareexcellenceinitiativemulti-centreclinicaltrials.pdf",
-    "time": "09 Oct 2026, 09:57 AM"
+    "type": "removed",
+    "src": "aerb",
+    "srcName": "Atomic Energy Regulatory Board (AERB)",
+    "body": "<strong>Proposal removed</strong> from Atomic Energy Regulatory Board (AERB) — \"List of Public Holidays\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:35 AM"
   },
   {
-    "id": 1791520037032,
+    "id": 1793682318874,
     "unread": false,
-    "type": "new-prop",
-    "src": "icmr",
-    "body": "<strong>New proposal added</strong> on ICMR — \"Call for Investigator-Initiated Research Proposals for First in World Challenge Grants (2026) Last Date: November 30, 2026, 17:30 hrs\". Deadline: Nov. 30, 2026.",
-    "docUrl": "https://www.icmr.gov.in/icmrobject/uploads/Call/1790846907_call_fiw_2026.pdf",
-    "time": "09 Oct 2026, 09:57 AM"
+    "type": "removed",
+    "src": "dst",
+    "srcName": "Department of Science and Technology (DST)",
+    "body": "<strong>Proposal removed</strong> from Department of Science and Technology (DST) — \"DST — Extra-Mural Research & Development Programmes (e-PMS Open Call)\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:35 AM"
   },
   {
-    "id": 1791520037032,
+    "id": 1793682318874,
     "unread": false,
-    "type": "new-prop",
-    "src": "icmr",
-    "body": "<strong>New proposal added</strong> on ICMR — \"SARANSH-3: Call for Expression of Interest (EoI) to conduct systematic review workshops for regional capacity building (Last Date: 30 September 2026)\". Deadline: Sept. 30, 2026.",
-    "docUrl": "https://www.icmr.gov.in/icmrobject/uploads/Call/1788175112_saransh_3_website.pdf",
-    "time": "09 Oct 2026, 09:57 AM"
+    "type": "removed",
+    "src": "dst",
+    "srcName": "Department of Science and Technology (DST)",
+    "body": "<strong>Proposal removed</strong> from Department of Science and Technology (DST) — \"DST — Institutional Capacity Building (FIST & SAIF Infrastructure Grants)\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:35 AM"
   },
   {
-    "id": 1791520037032,
+    "id": 1793682318874,
     "unread": false,
-    "type": "new-prop",
-    "src": "icmr",
-    "body": "<strong>New proposal added</strong> on ICMR — \"Special Call for Proposals for Establishment of ICMR Centre for Advanced Research (CAR) for the Development of Priority Medical Devices and Diagnostic Technologies (Last Date : 15th November, 2026, 1700 hours)\". Deadline: Nov. 15, 2026.",
-    "docUrl": "https://www.icmr.gov.in/icmrobject/uploads/Call/1790769452_specialcallforproposalsforestablishmentoficmrcentreforadvancedresearchcarforthedevelopmentofprioritymedicaldevicesanddiagnostictechnologies01102026.pdf",
-    "time": "09 Oct 2026, 09:57 AM"
+    "type": "removed",
+    "src": "dst",
+    "srcName": "Department of Science and Technology (DST)",
+    "body": "<strong>Proposal removed</strong> from Department of Science and Technology (DST) — \"DST — Innovation and Technology Development Programme (TDP Schemes)\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:35 AM"
   },
   {
-    "id": 1791520037032,
+    "id": 1793682318874,
     "unread": false,
-    "type": "new-prop",
-    "src": "icmr",
-    "body": "<strong>New proposal added</strong> on ICMR — \"Special Call for Establishment of ICMR Centres for Advanced Research (CAR) under the National Initiative for Reliable Medical Device Development and Assessment Network - Assistive Technology (NIRMAN – AT) (Last Date : 15th November 2026, 1700 hours)\". Deadline: Nov. 15, 2026.",
-    "docUrl": "https://www.icmr.gov.in/icmrobject/uploads/Call/1790827202_carnirman-at202601102026.pdf",
-    "time": "09 Oct 2026, 09:57 AM"
+    "type": "removed",
+    "src": "dst",
+    "srcName": "Department of Science and Technology (DST)",
+    "body": "<strong>Proposal removed</strong> from Department of Science and Technology (DST) — \"DST — National Missions (National Quantum Mission & Clean Energy Research)\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:35 AM"
   },
   {
-    "id": 1791520037032,
+    "id": 1793682318874,
     "unread": false,
-    "type": "new-prop",
-    "src": "icmr",
-    "body": "<strong>New proposal added</strong> on ICMR — \"Call for Expression of Interest (EoI) for Food and Diet-Based Approaches for Prevention and Management of Non-Communicable Diseases (Last Date: October 23, 2026)\". Deadline: Oct. 23, 2026.",
-    "docUrl": "https://www.icmr.gov.in/icmrobject/uploads/Call/1790766447_eoifordietandncds-final.pdf",
-    "time": "09 Oct 2026, 09:57 AM"
+    "type": "removed",
+    "src": "csir",
+    "srcName": "Council of Scientific & Industrial Research (CSIR)",
+    "body": "<strong>Proposal removed</strong> from Council of Scientific & Industrial Research (CSIR) — \"CSIR Extra-Mural Research (EMR) Grants Scheme for Academic Institutions\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:35 AM"
   },
   {
-    "id": 1791520037032,
+    "id": 1793682318874,
     "unread": false,
-    "type": "new-prop",
-    "src": "icmr",
-    "body": "<strong>New proposal added</strong> on ICMR — \"Call for proposals under- ICMR-Intramural Research Program - 2026 (Last date of Submission (extended): October 31, 2026 till 17:00 hrs)\". Deadline: Oct. 31, 2026.",
-    "docUrl": "https://www.icmr.gov.in/icmrobject/uploads/Call/1788257123_imcallforproposal202631_08_2026.pdf",
-    "time": "09 Oct 2026, 09:57 AM"
+    "type": "removed",
+    "src": "csir",
+    "srcName": "Council of Scientific & Industrial Research (CSIR)",
+    "body": "<strong>Proposal removed</strong> from Council of Scientific & Industrial Research (CSIR) — \"CSIR Technology Missions & Industry-Oriented Focused R&D Projects\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:35 AM"
   },
   {
-    "id": 1791520037032,
+    "id": 1793682318874,
     "unread": false,
-    "type": "new-prop",
-    "src": "icmr",
-    "body": "<strong>New proposal added</strong> on ICMR — \"Call for Research Proposals (Only for the Northeastern Region of India) under the \"Human Resource Development (HRD- Sub Scheme for Health Research\" of the Department of Health Research (MoHFW) Last Date: November 30, 2026 till 5:00 PM\"",
-    "docUrl": "https://www.icmr.gov.in/icmrobject/uploads/Call/1790596857_calln_rdhr.pdf",
-    "time": "09 Oct 2026, 09:57 AM"
+    "type": "removed",
+    "src": "brns",
+    "srcName": "Board of Research in Nuclear Sciences (BRNS)",
+    "body": "<strong>Proposal removed</strong> from Board of Research in Nuclear Sciences (BRNS) — \"BRNS Regular Research Projects (RP) in Nuclear and Allied Sciences\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:35 AM"
   },
   {
-    "id": 1791520037032,
+    "id": 1793682318874,
+    "unread": false,
+    "type": "removed",
+    "src": "brns",
+    "srcName": "Board of Research in Nuclear Sciences (BRNS)",
+    "body": "<strong>Proposal removed</strong> from Board of Research in Nuclear Sciences (BRNS) — \"BRNS DAE Young Scientist Research Award (YSRA) Scheme\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:35 AM"
+  },
+  {
+    "id": 1793682318874,
+    "unread": false,
+    "type": "removed",
+    "src": "isro",
+    "srcName": "Department of Space / ISRO (RESPOND)",
+    "body": "<strong>Proposal removed</strong> from Department of Space / ISRO (RESPOND) — \"ISRO RESPOND Programme — Research Grants in Space Science and Space Technology\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:35 AM"
+  },
+  {
+    "id": 1793682318874,
+    "unread": false,
+    "type": "removed",
+    "src": "isro",
+    "srcName": "Department of Space / ISRO (RESPOND)",
+    "body": "<strong>Proposal removed</strong> from Department of Space / ISRO (RESPOND) — \"ISRO Space Technology Cells (STC) & Joint Research Initiative\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:35 AM"
+  },
+  {
+    "id": 1793682318874,
+    "unread": false,
+    "type": "removed",
+    "src": "dsir",
+    "srcName": "Department of Scientific and Industrial Research (DSIR)",
+    "body": "<strong>Proposal removed</strong> from Department of Scientific and Industrial Research (DSIR) — \"DSIR Industrial R&D Promotion Programme (IRDPP) — In-house R&D Recognition\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:35 AM"
+  },
+  {
+    "id": 1793682318874,
+    "unread": false,
+    "type": "removed",
+    "src": "dsir",
+    "srcName": "Department of Scientific and Industrial Research (DSIR)",
+    "body": "<strong>Proposal removed</strong> from Department of Scientific and Industrial Research (DSIR) — \"DSIR Common Research and Technology Development Hubs (CRTDH) Scheme\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:35 AM"
+  },
+  {
+    "id": 1793682318874,
+    "unread": false,
+    "type": "removed",
+    "src": "icssr",
+    "srcName": "Indian Council of Social Science Research (ICSSR)",
+    "body": "<strong>Proposal removed</strong> from Indian Council of Social Science Research (ICSSR) — \"ICSSR Research Projects (Major and Minor Grants in Social Sciences)\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:35 AM"
+  },
+  {
+    "id": 1793682318874,
+    "unread": false,
+    "type": "removed",
+    "src": "icssr",
+    "srcName": "Indian Council of Social Science Research (ICSSR)",
+    "body": "<strong>Proposal removed</strong> from Indian Council of Social Science Research (ICSSR) — \"ICSSR National & Senior Research Fellowships Programme\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:35 AM"
+  },
+  {
+    "id": 1793682318874,
+    "unread": false,
+    "type": "removed",
+    "src": "anrf",
+    "srcName": "Anusandhan National Research Foundation (ANRF / SERB)",
+    "body": "<strong>Proposal removed</strong> from Anusandhan National Research Foundation (ANRF / SERB) — \"ANRF Core Research Grant (CRG) — Individual & Collaborative Grants\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:35 AM"
+  },
+  {
+    "id": 1793682318874,
+    "unread": false,
+    "type": "removed",
+    "src": "anrf",
+    "srcName": "Anusandhan National Research Foundation (ANRF / SERB)",
+    "body": "<strong>Proposal removed</strong> from Anusandhan National Research Foundation (ANRF / SERB) — \"ANRF Scientific & Useful Profound Research Advancement (SUPRA) Schemes\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:35 AM"
+  },
+  {
+    "id": 1793682318874,
+    "unread": false,
+    "type": "removed",
+    "src": "cpri",
+    "srcName": "Central Power Research Institute (CPRI)",
+    "body": "<strong>Proposal removed</strong> from Central Power Research Institute (CPRI) — \"CPRI Research Scheme on Power (RSOP) for Academic & Power Utilities\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:35 AM"
+  },
+  {
+    "id": 1793682318874,
+    "unread": false,
+    "type": "removed",
+    "src": "cpri",
+    "srcName": "Central Power Research Institute (CPRI)",
+    "body": "<strong>Proposal removed</strong> from Central Power Research Institute (CPRI) — \"CPRI National Perspective Plan (NPP) for R&D in Power Sector\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:35 AM"
+  },
+  {
+    "id": 1793682318874,
+    "unread": false,
+    "type": "removed",
+    "src": "meity",
+    "srcName": "Ministry of Electronics and Information Technology (MeitY)",
+    "body": "<strong>Proposal removed</strong> from Ministry of Electronics and Information Technology (MeitY) — \"MeitY Chips to Startup (C2S) Programme — VLSI & Embedded Systems Grants\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:35 AM"
+  },
+  {
+    "id": 1793682318874,
+    "unread": false,
+    "type": "removed",
+    "src": "meity",
+    "srcName": "Ministry of Electronics and Information Technology (MeitY)",
+    "body": "<strong>Proposal removed</strong> from Ministry of Electronics and Information Technology (MeitY) — \"MeitY Technology Incubation and Development of Entrepreneurs (TIDE 2.0)\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:35 AM"
+  },
+  {
+    "id": 1793682318874,
+    "unread": false,
+    "type": "removed",
+    "src": "mnre",
+    "srcName": "Ministry of New and Renewable Energy (MNRE)",
+    "body": "<strong>Proposal removed</strong> from Ministry of New and Renewable Energy (MNRE) — \"MNRE Renewable Energy Research, Technology and Development (RE-RTD) Programme\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:35 AM"
+  },
+  {
+    "id": 1793682318874,
+    "unread": false,
+    "type": "removed",
+    "src": "mnre",
+    "srcName": "Ministry of New and Renewable Energy (MNRE)",
+    "body": "<strong>Proposal removed</strong> from Ministry of New and Renewable Energy (MNRE) — \"MNRE National Green Hydrogen Mission — Call for Proposals on R&D Thrust Areas\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:35 AM"
+  },
+  {
+    "id": 1793682318874,
+    "unread": false,
+    "type": "removed",
+    "src": "mofpi",
+    "srcName": "Ministry of Food Processing Industries (MOFPI)",
+    "body": "<strong>Proposal removed</strong> from Ministry of Food Processing Industries (MOFPI) — \"MOFPI Scheme for Research & Development in Processed Food Sector (PMKSY)\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:35 AM"
+  },
+  {
+    "id": 1793682318874,
+    "unread": false,
+    "type": "removed",
+    "src": "ugc",
+    "srcName": "University Grants Commission (UGC)",
+    "body": "<strong>Proposal removed</strong> from University Grants Commission (UGC) — \"UGC Major & Minor Research Project Schemes for Universities and Colleges\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:35 AM"
+  },
+  {
+    "id": 1793682318874,
+    "unread": false,
+    "type": "removed",
+    "src": "ugc",
+    "srcName": "University Grants Commission (UGC)",
+    "body": "<strong>Proposal removed</strong> from University Grants Commission (UGC) — \"UGC STRIDE — Scheme for Trans-disciplinary Research for India's Developing Economy\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:35 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "updated",
+    "src": "icmr",
+    "srcName": "Indian Council of Medical Research (ICMR)",
+    "body": "<strong>Proposal updated</strong> on Indian Council of Medical Research (ICMR) — \"Result: Call for Investigator-Initiated Research Proposals for “ICMR Follow-on Small Extramural Grants” (“ICMR Follow-on ANVESHAN Extramural Grants”) - 2026 (Call Released on December 19, 2025)\". deadline changed from '' to 'Open'.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "updated",
+    "src": "icmr",
+    "srcName": "Indian Council of Medical Research (ICMR)",
+    "body": "<strong>Proposal updated</strong> on Indian Council of Medical Research (ICMR) — \"Result: Call for Investigator-Initiated Research Proposals for “ICMR Small Extramural Grants” (“ICMR ANVESHAN Extramural Grants”) - 2026 (Call Released on December 19, 2025)\". deadline changed from '' to 'Open'.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "updated",
+    "src": "icmr",
+    "srcName": "Indian Council of Medical Research (ICMR)",
+    "body": "<strong>Proposal updated</strong> on Indian Council of Medical Research (ICMR) — \"Result of the Expression of Interest (EoI) for Establishing Technical Resource Centres (TRCs) in the North-Eastern Region under the Centre for Evidence-based Guidelines, DHR\". deadline changed from '' to 'Open'.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "updated",
+    "src": "icmr",
+    "srcName": "Indian Council of Medical Research (ICMR)",
+    "body": "<strong>Proposal updated</strong> on Indian Council of Medical Research (ICMR) — \"Result: ICMR Collaborating Centre of Excellence (ICMR-CCoE) - 2026\". deadline changed from '' to 'Open'.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "updated",
+    "src": "icmr",
+    "srcName": "Indian Council of Medical Research (ICMR)",
+    "body": "<strong>Proposal updated</strong> on Indian Council of Medical Research (ICMR) — \"Call for Research Proposals (Only for the Northeastern Region of India) under the \"Human Resource Development (HRD- Sub Scheme for Health Research\" of the Department of Health Research (MoHFW) Last Date: November 30, 2026 till 5:00 PM\". deadline changed from '' to 'Open'.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "updated",
+    "src": "icmr",
+    "srcName": "Indian Council of Medical Research (ICMR)",
+    "body": "<strong>Proposal updated</strong> on Indian Council of Medical Research (ICMR) — \"Results: Special Call for proposals for establishment of ICMR Centres for Advanced Research (CAR) for Development of Priority Medical Devices and Diagnostic Technologies\". deadline changed from '' to 'Open'.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "updated",
+    "src": "icmr",
+    "srcName": "Indian Council of Medical Research (ICMR)",
+    "body": "<strong>Proposal updated</strong> on Indian Council of Medical Research (ICMR) — \"Result: Call for Investigator-Initiated Research Proposals for “ICMR Intermediate Extramural Grants” (“ICMR NISCHAYAK ANVESHAN Extramural Grants”) - 2026 (Call Released on December 19, 2025)\". deadline changed from '' to 'Open'.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "updated",
+    "src": "icmr",
+    "srcName": "Indian Council of Medical Research (ICMR)",
+    "body": "<strong>Proposal updated</strong> on Indian Council of Medical Research (ICMR) — \"Result: Call for Investigator-Initiated Research Proposals for “ICMR Follow-on Intermediate Extramural Grants” (“ICMR Follow-on NISCHAYAK ANVESHAN Extramural Grants”) - 2026 (Call Released on December 19, 2025)\". deadline changed from '' to 'Open'.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "updated",
+    "src": "icmr",
+    "srcName": "Indian Council of Medical Research (ICMR)",
+    "body": "<strong>Proposal updated</strong> on Indian Council of Medical Research (ICMR) — \"Results - Expression of Interest (EoI) for the ICMR Clinical Care Excellence Initiative: Multi-centre Clinical Trials Addressing Non-Communicable Diseases\". deadline changed from '' to 'Open'.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
     "unread": false,
     "type": "new-prop",
     "src": "dbt",
-    "body": "<strong>New proposal added</strong> on DBT — \"Call for Proposals: Microbiome and Their Implications to Human Health and Disease – Therapeutic Potential and Translational Opportunities\". Deadline: Oct 15, 2026.",
+    "srcName": "Department of Biotechnology (DBT)",
+    "body": "<strong>New proposal added</strong> on Department of Biotechnology (DBT) — \"Call for Proposals: Microbiome and Their Implications to Human Health and Disease – Therapeutic Potential\". Deadline: Oct 15, 2026.",
     "docUrl": "https://dbt.gov.in/storage/media/Gn8sCFXGM8OHPFXw1xcrAMozOL7IvYNMaxOyisoI.pdf",
-    "time": "09 Oct 2026, 09:57 AM"
+    "time": "03 Nov 2026, 10:23 AM"
   },
   {
-    "id": 1791520037032,
+    "id": 1793681635238,
     "unread": false,
     "type": "new-prop",
     "src": "dbt",
-    "body": "<strong>New proposal added</strong> on DBT — \"Call for Proposals: T Cell Based Vaccines and Biologics in Infectious Diseases, Cancer and Autoimmune Diseases\". Deadline: Oct 6, 2026.",
-    "docUrl": "https://dbt.gov.in/storage/media/kD4sCpy1loK6v13u8bhOdCHaJDCxTn0B1yzs1qRY.pdf",
-    "time": "09 Oct 2026, 09:57 AM"
-  },
-  {
-    "id": 1791520037032,
-    "unread": false,
-    "type": "new-prop",
-    "src": "dbt",
-    "body": "<strong>New proposal added</strong> on DBT — \"DBT-BIRAC Joint Call for Proposals on Bio-AI for Establishing BioE3 Hubs (BioE3 Policy – Biomanufacturing)\". Deadline: Jun 30, 2026.",
+    "srcName": "Department of Biotechnology (DBT)",
+    "body": "<strong>New proposal added</strong> on Department of Biotechnology (DBT) — \"DBT-BIRAC Joint Call for Proposals on Bio-AI for Establishing BioE3 Hubs (Biomanufacturing)\". Deadline: Jun 30, 2026.",
     "docUrl": "https://dbt.gov.in/storage/media/K0rMbuIV5klmNimgi3DLd5GPL6Qo5z6QW9imsYJl.pdf",
-    "time": "09 Oct 2026, 09:57 AM"
+    "time": "03 Nov 2026, 10:23 AM"
   },
   {
-    "id": 1791520037032,
+    "id": 1793681635238,
     "unread": false,
     "type": "new-prop",
-    "src": "dbt",
-    "body": "<strong>New proposal added</strong> on DBT — \"Call for Applications: BioCARe Programme for Women Researchers 2026-27\". Deadline: Oct 8, 2026.",
-    "docUrl": "https://dbt.gov.in/storage/media/Q8L31YFSQ675iHlardBO8bAH7Imv09ms54ftI3wV.pdf",
-    "time": "09 Oct 2026, 09:57 AM"
+    "src": "dst",
+    "srcName": "Department of Science and Technology (DST)",
+    "body": "<strong>New proposal added</strong> on Department of Science and Technology (DST) — \"DST — Extra-Mural Research & Development Programmes (e-PMS Open Call)\". Deadline: Open Rolling.",
+    "docUrl": "https://dst.gov.in/call-for-proposals",
+    "time": "03 Nov 2026, 10:23 AM"
   },
   {
-    "id": 1791520037032,
+    "id": 1793681635238,
     "unread": false,
     "type": "new-prop",
-    "src": "dbt",
-    "body": "<strong>New proposal added</strong> on DBT — \"Call for Proposals: Biotechnological Interventions for Improvement of High Value Cash Crops\". Deadline: May 5, 2026.",
-    "docUrl": "https://dbt.gov.in/storage/media/wVU64NlxMyCCIAFQQrlL7hllrPkq6Edlyn9ITL9D.pdf",
-    "time": "09 Oct 2026, 09:57 AM"
+    "src": "dst",
+    "srcName": "Department of Science and Technology (DST)",
+    "body": "<strong>New proposal added</strong> on Department of Science and Technology (DST) — \"DST — Institutional Capacity Building (FIST & SAIF Infrastructure Grants)\". Deadline: Nov 30, 2026.",
+    "docUrl": "https://dst.gov.in/institutional-capacity-building-programmes",
+    "time": "03 Nov 2026, 10:23 AM"
   },
   {
-    "id": 1791520037032,
+    "id": 1793681635238,
     "unread": false,
     "type": "new-prop",
+    "src": "dst",
+    "srcName": "Department of Science and Technology (DST)",
+    "body": "<strong>New proposal added</strong> on Department of Science and Technology (DST) — \"DST — Innovation and Technology Development Programme (TDP Schemes)\". Deadline: Dec 15, 2026.",
+    "docUrl": "https://dst.gov.in/innovation-and-technology-development-programmes",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "new-prop",
+    "src": "dst",
+    "srcName": "Department of Science and Technology (DST)",
+    "body": "<strong>New proposal added</strong> on Department of Science and Technology (DST) — \"DST — National Missions (National Quantum Mission & Clean Energy Research)\". Deadline: Dec 31, 2026.",
+    "docUrl": "https://dst.gov.in/national-missions",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "new-prop",
+    "src": "csir",
+    "srcName": "Council of Scientific & Industrial Research (CSIR)",
+    "body": "<strong>New proposal added</strong> on Council of Scientific & Industrial Research (CSIR) — \"CSIR Extra-Mural Research (EMR) Grants Scheme for Academic Institutions\". Deadline: Open Rolling.",
+    "docUrl": "https://www.csir.res.in/",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "new-prop",
+    "src": "csir",
+    "srcName": "Council of Scientific & Industrial Research (CSIR)",
+    "body": "<strong>New proposal added</strong> on Council of Scientific & Industrial Research (CSIR) — \"CSIR Technology Missions & Industry-Oriented Focused R&D Projects\". Deadline: Open Rolling.",
+    "docUrl": "https://www.csir.res.in/",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "new-prop",
+    "src": "brns",
+    "srcName": "Board of Research in Nuclear Sciences (BRNS)",
+    "body": "<strong>New proposal added</strong> on Board of Research in Nuclear Sciences (BRNS) — \"BRNS Regular Research Projects (RP) in Nuclear and Allied Sciences\". Deadline: Open Rolling.",
+    "docUrl": "https://brns.res.in/",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "new-prop",
+    "src": "brns",
+    "srcName": "Board of Research in Nuclear Sciences (BRNS)",
+    "body": "<strong>New proposal added</strong> on Board of Research in Nuclear Sciences (BRNS) — \"BRNS DAE Young Scientist Research Award (YSRA) Scheme\". Deadline: Dec 31, 2026.",
+    "docUrl": "https://brns.res.in/",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "new-prop",
+    "src": "isro",
+    "srcName": "Department of Space / ISRO (RESPOND)",
+    "body": "<strong>New proposal added</strong> on Department of Space / ISRO (RESPOND) — \"ISRO RESPOND Programme — Research Grants in Space Science and Space Technology\". Deadline: Open Rolling.",
+    "docUrl": "https://www.isro.gov.in/",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "new-prop",
+    "src": "isro",
+    "srcName": "Department of Space / ISRO (RESPOND)",
+    "body": "<strong>New proposal added</strong> on Department of Space / ISRO (RESPOND) — \"ISRO Space Technology Cells (STC) & Joint Research Initiative\". Deadline: Open Rolling.",
+    "docUrl": "https://www.isro.gov.in/",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "new-prop",
+    "src": "dsir",
+    "srcName": "Department of Scientific and Industrial Research (DSIR)",
+    "body": "<strong>New proposal added</strong> on Department of Scientific and Industrial Research (DSIR) — \"DSIR Industrial R&D Promotion Programme (IRDPP) — In-house R&D Recognition\". Deadline: Open Rolling.",
+    "docUrl": "https://www.dsir.gov.in/",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "new-prop",
+    "src": "dsir",
+    "srcName": "Department of Scientific and Industrial Research (DSIR)",
+    "body": "<strong>New proposal added</strong> on Department of Scientific and Industrial Research (DSIR) — \"DSIR Common Research and Technology Development Hubs (CRTDH) Scheme\". Deadline: Nov 30, 2026.",
+    "docUrl": "https://www.dsir.gov.in/",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "new-prop",
+    "src": "icssr",
+    "srcName": "Indian Council of Social Science Research (ICSSR)",
+    "body": "<strong>New proposal added</strong> on Indian Council of Social Science Research (ICSSR) — \"ICSSR Research Projects (Major and Minor Grants in Social Sciences)\". Deadline: Nov 25, 2026.",
+    "docUrl": "https://icssr.org/",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "new-prop",
+    "src": "icssr",
+    "srcName": "Indian Council of Social Science Research (ICSSR)",
+    "body": "<strong>New proposal added</strong> on Indian Council of Social Science Research (ICSSR) — \"ICSSR National & Senior Research Fellowships Programme\". Deadline: Dec 15, 2026.",
+    "docUrl": "https://icssr.org/",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "new-prop",
+    "src": "anrf",
+    "srcName": "Anusandhan National Research Foundation (ANRF / SERB)",
+    "body": "<strong>New proposal added</strong> on Anusandhan National Research Foundation (ANRF / SERB) — \"ANRF Core Research Grant (CRG) — Individual & Collaborative Grants\". Deadline: Open Rolling.",
+    "docUrl": "https://anrf.gov.in/",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "new-prop",
+    "src": "anrf",
+    "srcName": "Anusandhan National Research Foundation (ANRF / SERB)",
+    "body": "<strong>New proposal added</strong> on Anusandhan National Research Foundation (ANRF / SERB) — \"ANRF Scientific & Useful Profound Research Advancement (SUPRA) Schemes\". Deadline: Dec 10, 2026.",
+    "docUrl": "https://anrf.gov.in/",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "new-prop",
+    "src": "cpri",
+    "srcName": "Central Power Research Institute (CPRI)",
+    "body": "<strong>New proposal added</strong> on Central Power Research Institute (CPRI) — \"CPRI Research Scheme on Power (RSOP) for Academic & Power Utilities\". Deadline: Open Rolling.",
+    "docUrl": "https://cpri.res.in/",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "new-prop",
+    "src": "cpri",
+    "srcName": "Central Power Research Institute (CPRI)",
+    "body": "<strong>New proposal added</strong> on Central Power Research Institute (CPRI) — \"CPRI National Perspective Plan (NPP) for R&D in Power Sector\". Deadline: Open Rolling.",
+    "docUrl": "https://cpri.res.in/",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "new-prop",
+    "src": "meity",
+    "srcName": "Ministry of Electronics and Information Technology (MeitY)",
+    "body": "<strong>New proposal added</strong> on Ministry of Electronics and Information Technology (MeitY) — \"MeitY Chips to Startup (C2S) Programme — VLSI & Embedded Systems Grants\". Deadline: Open Rolling.",
+    "docUrl": "https://www.meity.gov.in/",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "new-prop",
+    "src": "meity",
+    "srcName": "Ministry of Electronics and Information Technology (MeitY)",
+    "body": "<strong>New proposal added</strong> on Ministry of Electronics and Information Technology (MeitY) — \"MeitY Technology Incubation and Development of Entrepreneurs (TIDE 2.0)\". Deadline: Dec 20, 2026.",
+    "docUrl": "https://www.meity.gov.in/",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "new-prop",
+    "src": "mnre",
+    "srcName": "Ministry of New and Renewable Energy (MNRE)",
+    "body": "<strong>New proposal added</strong> on Ministry of New and Renewable Energy (MNRE) — \"MNRE Renewable Energy Research, Technology and Development (RE-RTD) Programme\". Deadline: Open Rolling.",
+    "docUrl": "https://research.mnre.gov.in/",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "new-prop",
+    "src": "mnre",
+    "srcName": "Ministry of New and Renewable Energy (MNRE)",
+    "body": "<strong>New proposal added</strong> on Ministry of New and Renewable Energy (MNRE) — \"MNRE National Green Hydrogen Mission — Call for Proposals on R&D Thrust Areas\". Deadline: Dec 30, 2026.",
+    "docUrl": "https://research.mnre.gov.in/",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "new-prop",
+    "src": "mofpi",
+    "srcName": "Ministry of Food Processing Industries (MOFPI)",
+    "body": "<strong>New proposal added</strong> on Ministry of Food Processing Industries (MOFPI) — \"MOFPI Scheme for Research & Development in Processed Food Sector (PMKSY)\". Deadline: Open Rolling.",
+    "docUrl": "https://www.mofpi.gov.in/",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "new-prop",
+    "src": "ugc",
+    "srcName": "University Grants Commission (UGC)",
+    "body": "<strong>New proposal added</strong> on University Grants Commission (UGC) — \"UGC Major & Minor Research Project Schemes for Universities and Colleges\". Deadline: Open Rolling.",
+    "docUrl": "https://www.ugc.gov.in/",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "new-prop",
+    "src": "ugc",
+    "srcName": "University Grants Commission (UGC)",
+    "body": "<strong>New proposal added</strong> on University Grants Commission (UGC) — \"UGC STRIDE — Scheme for Trans-disciplinary Research for India's Developing Economy\". Deadline: Open Rolling.",
+    "docUrl": "https://www.ugc.gov.in/",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "removed",
     "src": "dbt",
-    "body": "<strong>New proposal added</strong> on DBT — \"Call for Proposals: Development of Next-Generation Vaccines, Diagnostics and Therapeutics (Livestock & Aquaculture)\". Deadline: May 15, 2026.",
-    "docUrl": "https://dbt.gov.in/storage/media/3evyiwTCG0lXpC85dyTMzFv6Kup10H6S1qwLtLvW.pdf",
-    "time": "09 Oct 2026, 09:57 AM"
+    "srcName": "Department of Biotechnology (DBT)",
+    "body": "<strong>Proposal removed</strong> from Department of Biotechnology (DBT) — \"Call for Proposals: Microbiome and Their Implications to Human Health and Disease – Therapeutic Potential and Translational Opportunities\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "removed",
+    "src": "dbt",
+    "srcName": "Department of Biotechnology (DBT)",
+    "body": "<strong>Proposal removed</strong> from Department of Biotechnology (DBT) — \"DBT-BIRAC Joint Call for Proposals on Bio-AI for Establishing BioE3 Hubs (BioE3 Policy – Biomanufacturing)\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "removed",
+    "src": "nbhm",
+    "srcName": "National Board for Higher Mathematics (NBHM)",
+    "body": "<strong>Proposal removed</strong> from National Board for Higher Mathematics (NBHM) — \"Guidelines for Release of Grant\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "removed",
+    "src": "aicte_1",
+    "srcName": "AICTE - Student Research Funds",
+    "body": "<strong>Proposal removed</strong> from AICTE - Student Research Funds — \"Support to Students for Participating in Competition Abroad (SSPCA)\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "removed",
+    "src": "aicte_1",
+    "srcName": "AICTE - Student Research Funds",
+    "body": "<strong>Proposal removed</strong> from AICTE - Student Research Funds — \"AICTE Doctoral Fellowship (ADF) for Full-Time PhD Scholars\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "removed",
+    "src": "aicte_1",
+    "srcName": "AICTE - Student Research Funds",
+    "body": "<strong>Proposal removed</strong> from AICTE - Student Research Funds — \"Post Graduate (PG) Scholarship for GATE/CEED Qualified Students\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "removed",
+    "src": "aicte_2",
+    "srcName": "AICTE - Research & Innovation Schemes",
+    "body": "<strong>Proposal removed</strong> from AICTE - Research & Innovation Schemes — \"Research Promotion Scheme (RPS) for Technical Teachers and Institutions\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "removed",
+    "src": "aicte_2",
+    "srcName": "AICTE - Research & Innovation Schemes",
+    "body": "<strong>Proposal removed</strong> from AICTE - Research & Innovation Schemes — \"Modernisation and Removal of Obsolescence (MODROBS) Scheme\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "removed",
+    "src": "aicte_2",
+    "srcName": "AICTE - Research & Innovation Schemes",
+    "body": "<strong>Proposal removed</strong> from AICTE - Research & Innovation Schemes — \"Grant for Organizing Conference (GOC) in Technical Disciplines\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "removed",
+    "src": "brns",
+    "srcName": "BOARD OF RESEARCH IN NUCLEAR SCIENCES (BRNS)",
+    "body": "<strong>Proposal removed</strong> from BOARD OF RESEARCH IN NUCLEAR SCIENCES (BRNS) — \"Regular Research Projects (RP) in Nuclear and Allied Sciences\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "removed",
+    "src": "brns",
+    "srcName": "BOARD OF RESEARCH IN NUCLEAR SCIENCES (BRNS)",
+    "body": "<strong>Proposal removed</strong> from BOARD OF RESEARCH IN NUCLEAR SCIENCES (BRNS) — \"BRNS Coordinated Research Projects (CRP) for Multidisciplinary Teams\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "removed",
+    "src": "brns",
+    "srcName": "BOARD OF RESEARCH IN NUCLEAR SCIENCES (BRNS)",
+    "body": "<strong>Proposal removed</strong> from BOARD OF RESEARCH IN NUCLEAR SCIENCES (BRNS) — \"DAE Young Scientist Research Award (YSRA) - Nuclear Sciences\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "removed",
+    "src": "csir",
+    "srcName": "Council of Scientific & Industrial Research (CSIR)",
+    "body": "<strong>Proposal removed</strong> from Council of Scientific & Industrial Research (CSIR) — \"CSIR Extramural Research Grants - Physical, Chemical, Life and Engineering Sciences\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "removed",
+    "src": "csir",
+    "srcName": "Council of Scientific & Industrial Research (CSIR)",
+    "body": "<strong>Proposal removed</strong> from Council of Scientific & Industrial Research (CSIR) — \"CSIR First-in-World / Trans-disciplinary Collaborative Research Proposals\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "removed",
+    "src": "csir",
+    "srcName": "Council of Scientific & Industrial Research (CSIR)",
+    "body": "<strong>Proposal removed</strong> from Council of Scientific & Industrial Research (CSIR) — \"CSIR-ASPIRE: Research Grants for Women Scientists in Emerging Domains\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "removed",
+    "src": "cpri",
+    "srcName": "Central Power Research Institute (CPRI)",
+    "body": "<strong>Proposal removed</strong> from Central Power Research Institute (CPRI) — \"Research Scheme on Power (RSOP) - Collaborative R&D in Power Sector\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "removed",
+    "src": "cpri",
+    "srcName": "Central Power Research Institute (CPRI)",
+    "body": "<strong>Proposal removed</strong> from Central Power Research Institute (CPRI) — \"R&D under National Perspective Plan (NPP) for High Voltage and Smart Grid Tech\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "removed",
+    "src": "dst_schemes",
+    "srcName": "DST - Schemes & Programmes",
+    "body": "<strong>Proposal removed</strong> from DST - Schemes & Programmes — \"Comprehensive S&T Schemes & Programmes for Academic & Research Institutions\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "removed",
+    "src": "dst_calls",
+    "srcName": "DST - Call for Proposals",
+    "body": "<strong>Proposal removed</strong> from DST - Call for Proposals — \"DST Call for Proposals: Science and Technology of Yoga and Meditation (SATYAM)\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "removed",
+    "src": "dst_calls",
+    "srcName": "DST - Call for Proposals",
+    "body": "<strong>Proposal removed</strong> from DST - Call for Proposals — \"DST Waste Management Technologies (WMT) Call for R&D Solutions\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "removed",
+    "src": "dst_capacity",
+    "srcName": "DST - Institutional Capacity Building Programmes",
+    "body": "<strong>Proposal removed</strong> from DST - Institutional Capacity Building Programmes — \"FIST (Fund for Improvement of S&T Infrastructure in Universities & Higher Educational Institutions)\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "removed",
+    "src": "dst_capacity",
+    "srcName": "DST - Institutional Capacity Building Programmes",
+    "body": "<strong>Proposal removed</strong> from DST - Institutional Capacity Building Programmes — \"SAIF (Sophisticated Analytical Instrument Facilities) National Support Programme\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "removed",
+    "src": "dst_rd",
+    "srcName": "DST - Research & Development Programmes",
+    "body": "<strong>Proposal removed</strong> from DST - Research & Development Programmes — \"Clean Energy Research Initiative (CERI) Call for Solar, Hydrogen & Storage Tech\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "removed",
+    "src": "dst_rd",
+    "srcName": "DST - Research & Development Programmes",
+    "body": "<strong>Proposal removed</strong> from DST - Research & Development Programmes — \"Water Technology Initiative (WTI) - Desalination and Advanced Water Purification\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "removed",
+    "src": "dst_inno",
+    "srcName": "DST - Innovation and Technology Development Programmes",
+    "body": "<strong>Proposal removed</strong> from DST - Innovation and Technology Development Programmes — \"Technology Development Programme (TDP) - Advanced Materials and Indigenous Sensors\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "removed",
+    "src": "dst_society",
+    "srcName": "DST - Science for Society Programmes",
+    "body": "<strong>Proposal removed</strong> from DST - Science for Society Programmes — \"Science for Equity, Empowerment and Development (SEED) - Livelihood Technologies\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "removed",
+    "src": "dst_missions",
+    "srcName": "DST - National Missions",
+    "body": "<strong>Proposal removed</strong> from DST - National Missions — \"National Mission on Interdisciplinary Cyber-Physical Systems (NM-ICPS) - Hub Grants\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "removed",
+    "src": "dst_missions",
+    "srcName": "DST - National Missions",
+    "body": "<strong>Proposal removed</strong> from DST - National Missions — \"National Quantum Mission (NQM) - Quantum Computing and Communication Calls\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "removed",
+    "src": "dst_intl",
+    "srcName": "DST - International Cooperation & Mega Science",
+    "body": "<strong>Proposal removed</strong> from DST - International Cooperation & Mega Science — \"Bilateral & Multilateral Joint R&D Calls (Indo-German, Indo-Japanese, Indo-US)\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "removed",
+    "src": "dst_data",
+    "srcName": "DST - S&T Data, Policy and Training",
+    "body": "<strong>Proposal removed</strong> from DST - S&T Data, Policy and Training — \"National Data Sharing & Accessibility Policy (NDSAP) & STI Policy Research Grants\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "removed",
+    "src": "dst_state",
+    "srcName": "DST - State S&T Initiative",
+    "body": "<strong>Proposal removed</strong> from DST - State S&T Initiative — \"State Science and Technology Programme (SSTP) for Regional Innovation Councils\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
+  },
+  {
+    "id": 1793681635238,
+    "unread": false,
+    "type": "removed",
+    "src": "dst_idp",
+    "srcName": "DST - Instrument Development Programme (IDP)",
+    "body": "<strong>Proposal removed</strong> from DST - Instrument Development Programme (IDP) — \"DST Instrument Development Programme (IDP) - Indigenous Analytical & Medical Instruments\" is no longer active.",
+    "docUrl": "",
+    "time": "03 Nov 2026, 10:23 AM"
   }
 ]
