@@ -373,7 +373,7 @@ tr:hover td{background:#FAFBFC}
       </div>
       <div class="scard">
         <div class="stitle">Backend Connection</div>
-        <div class="srow2"><div><div class="skey">API Base URL</div><div class="ssub" id="apiUrlTxt">http://localhost:5050</div></div><span class="badge open" id="apiStat">Connected</span></div>
+        <div class="srow2"><div><div class="skey">API Base URL</div><div class="ssub" id="apiUrlTxt">http://13.51.70.147:5050</div></div><span class="badge open" id="apiStat">Connected</span></div>
         <div class="srow2"><div><div class="skey">Last successful sync</div></div><span style="font-size:11px;color:var(--text-sub);" id="lastFetch">—</span></div>
       </div>
       <button class="btn btn-primary" onclick="triggerScan()">Refresh Data Now</button>
@@ -399,7 +399,7 @@ tr:hover td{background:#FAFBFC}
 <div class="toast-container" id="toastC"></div>
 
 <script>
-const API = 'http://localhost:5050/api';
+const API = 'http://13.51.70.147:5050/api';
 let FREQ_MS = 5 * 60 * 1000, cdSec = 300;
 let prevIds = new Set();
 let isInitialLoad = true;
@@ -879,7 +879,7 @@ document.getElementById('searchInput').addEventListener('input', debounceFilter)
 document.getElementById('statusFilter').addEventListener('change', applyFilters);
 document.getElementById('typeFilter').addEventListener('change', applyFilters);
 
-document.getElementById('apiUrlTxt').textContent = 'http://localhost:5050';
+document.getElementById('apiUrlTxt').textContent = 'http://13.51.70.147:5050';
 fetchAll();
 resetCD();
 setInterval(tickCD, 1000);
